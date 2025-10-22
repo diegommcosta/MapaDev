@@ -1,27 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
+    <link rel="stylesheet" href="Estilos/estilos.css">
+    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script>
+    <!-- link para importar o pacote de icones -->
     <title>MapaDev</title>
 </head>
+
 <body>
-    <header> <!-- Cabeçalho do site -->
-        <p>Logo</p>
-        <nav> <!-- Menu de navegação -->           
-            <ul>
-                <li><a href="iniciante.html">Iniciante</a></li>
-                <li><a href="intermediario.html">Intermediário</a></li>
-                <li><a href="avancado.html">Avançado</a></li>
-            </ul>            
+    <header> <!-- Início do Cabeçalho do site -->
+        <img src="Imagens/logo.png"
+            alt="Logo MapaDev: escudo futurista com um mapa digitalizado de rotas e um ícone de play/cursor no centro, sobre um fundo tecnológico com o texto 'Sua rota pelo código'. Representa um guia de aprendizado em programação."> <!--Imagem de logo criada pelo Gemini-->
+        <nav> <!-- Menu de navegação -->
+            <!--ul e li's retirados para que o menu passe de bloco para linha e fiquem alinhados da forma do layout-->
+            <a href="iniciante.html">Iniciante</a>
+            <a href="intermediario.html">Intermediário</a>
+            <a href="avancado.html">Avançado</a>
         </nav>
         <div class="pesquisa-container"> <!-- Botão de pesquisa -->
             <input type="text" class="pesquisa-input" placeholder="Pesquisar...">
             <button class="pesquisa-btn">
-            <div><i class="fa-solid fa-magnifying-glass"></i></div> <!-- lupa envolvida por uma div para dar flexbilidade posteriormente -->
+                <i class="fa-solid fa-magnifying-glass"></i> <!-- lupa  -->
+            </button>
+            <button class="tema-btn">
+                <i class="fa-solid fa-moon"></i> <!--botão para mudança de tema "lua"-->
             </button>
         </div>
-    </header>
+    </header> <!--Fim do Cabeçalho do site-->
+
+ <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Início da parte principal do site-->
+    
+    <main> 
+
+        <!--Inicio da Section de Boas vindas nela conterá, de acordo com o layout inicial, um titulo principal, um parágrafo e uma imagem-->
+        <section class="boas-vindas">
+            <h1>Bem-vindo ao MapaDev!</h1> <!--Título -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam et ullam, alias dicta minus unde
+                cupiditate quae possimus id quos dolores perferendis quam ea obcaecati perspiciatis fugiat quis corrupti
+                dolore.
+                Corporis id recusandae esse quos sunt amet illo officiis, excepturi itaque ipsum placeat quaerat
+                voluptatibus, tenetur numquam porro aperiam laudantium unde consequuntur voluptate voluptatum rem quis
+                debitis dolores hic! Alias!
+                Culpa sit consectetur aspernatur deserunt nisi a ut omnis aliquam eveniet! Non velit quos ad doloremque
+                eveniet nobis, dolor accusamus facere sint soluta nulla nostrum labore, corrupti nesciunt dolore
+                officiis.</p> <!--Parágrafo genérico-->
+            <img src="Imagens/boas-vindas-img.png" alt=""> <!--Imagem de boas vindas feita pelo Gemini-->
+        </section>
+        <!--Fim da section de boas vindas-->
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!--Início da section de apresentação dos criadores, nela conterá um H2 com o título da section, 3 div's contendo em cada uma um H3 com o nome dos criadores, uma imagem que será a foto do respectivo, um parágrafo contendo a apresentação do criador e dois icones, um do linkedIn e outro do GitHub de cada criador -->
+        <section class="apresentacao">
+            <h2>Quem está construindo o MapaDev?</h2> <!--Título da section-->
+
+            <!--Início da div de apresentação do Diego-->
+            <div class="apresentacao-diego">
+                <img src="Imagens/diego.png" alt=""> <!--foto do Diego-->
+                <h3>Diego Manoel</h3> <!--Nome-->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti asperiores, excepturi pariatur
+                    voluptate rem a? Quas, ut! Illo, doloribus! Perspiciatis dignissimos quae aperiam animi? Dolor
+                    officiis consectetur voluptatibus facere cum.
+                    Tenetur error, minima exercitationem vero alias voluptas consectetur? Iusto labore, consectetur,
+                    animi earum voluptatum rem consequatur exercitationem fugit asperiores laborum iure beatae esse
+                    repudiandae obcaecati in at nisi nobis ducimus!
+                    Laborum explicabo reiciendis similique quo placeat cupiditate optio. Itaque labore delectus, dolorum
+                    soluta magnam sint ipsa exercitationem magni aliquid ducimus nemo ratione ipsum sed iure nihil
+                    deleniti velit ipsam corrupti?
+                    Accusantium impedit ullam doloremque cupiditate laborum hic ab quaerat esse aut ut repellat
+                    exercitationem deleniti, magnam quisquam recusandae dolor autem quam maxime rerum! Sequi velit
+                    maiores ipsam laudantium sunt dolorem.
+                    Quisquam rerum voluptates quaerat minima, eius dolores earum optio quae, saepe expedita, corporis
+                    dolorem at molestias debitis sunt. Molestias totam aliquid earum corporis cum, dignissimos explicabo
+                    temporibus perferendis obcaecati excepturi.</p> <!--Parágrafo de apresentação genérico-->
+
+                <button class="linkedin"><i class="fa-brands fa-linkedin"></i></button>
+                <!--ícone do linkedin envolvido por um button que será dado uma função posteriormente a ele-->
+                <button class="github"><i class="fa-brands fa-github"></i></button>
+                <!--ícone do github envolvido por um button que será dado uma função posteriormente a ele-->
+            </div>
+            <!--Fim da div de apresentação do Diego (As demais div's seguirão a mesma estrutura, por isso não haverá comentários)-->
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="apresentacao-thiago"> <!--Início apresentação do Thiago-->
+                <img src="Imagens/thiago.jpeg" alt="">
+                <h3>Thiago De Angelis</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti asperiores, excepturi pariatur
+                    voluptate rem a? Quas, ut! Illo, doloribus! Perspiciatis dignissimos quae aperiam animi? Dolor
+                    officiis consectetur voluptatibus facere cum.
+                    Tenetur error, minima exercitationem vero alias voluptas consectetur? Iusto labore, consectetur,
+                    animi earum voluptatum rem consequatur exercitationem fugit asperiores laborum iure beatae esse
+                    repudiandae obcaecati in at nisi nobis ducimus!
+                    Laborum explicabo reiciendis similique quo placeat cupiditate optio. Itaque labore delectus, dolorum
+                    soluta magnam sint ipsa exercitationem magni aliquid ducimus nemo ratione ipsum sed iure nihil
+                    deleniti velit ipsam corrupti?
+                    Accusantium impedit ullam doloremque cupiditate laborum hic ab quaerat esse aut ut repellat
+                    exercitationem deleniti, magnam quisquam recusandae dolor autem quam maxime rerum! Sequi velit
+                    maiores ipsam laudantium sunt dolorem.
+                    Quisquam rerum voluptates quaerat minima, eius dolores earum optio quae, saepe expedita, corporis
+                    dolorem at molestias debitis sunt. Molestias totam aliquid earum corporis cum, dignissimos explicabo
+                    temporibus perferendis obcaecati excepturi.</p>
+                <button class="linkedin"><i class="fa-brands fa-linkedin"></i></button>
+                <button class="github"><i class="fa-brands fa-github"></i></button>
+            </div> <!--Fim apresentação do Thiago-->
+            
+            <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="apresentacao-luan"> <!--Início apresentação do Luan-->
+                <img src="Imagens/luan.jpeg" alt="">
+                <h3>Luan Matheus</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti asperiores, excepturi pariatur
+                    voluptate rem a? Quas, ut! Illo, doloribus! Perspiciatis dignissimos quae aperiam animi? Dolor
+                    officiis consectetur voluptatibus facere cum.
+                    Tenetur error, minima exercitationem vero alias voluptas consectetur? Iusto labore, consectetur,
+                    animi earum voluptatum rem consequatur exercitationem fugit asperiores laborum iure beatae esse
+                    repudiandae obcaecati in at nisi nobis ducimus!
+                    Laborum explicabo reiciendis similique quo placeat cupiditate optio. Itaque labore delectus, dolorum
+                    soluta magnam sint ipsa exercitationem magni aliquid ducimus nemo ratione ipsum sed iure nihil
+                    deleniti velit ipsam corrupti?
+                    Accusantium impedit ullam doloremque cupiditate laborum hic ab quaerat esse aut ut repellat
+                    exercitationem deleniti, magnam quisquam recusandae dolor autem quam maxime rerum! Sequi velit
+                    maiores ipsam laudantium sunt dolorem.
+                    Quisquam rerum voluptates quaerat minima, eius dolores earum optio quae, saepe expedita, corporis
+                    dolorem at molestias debitis sunt. Molestias totam aliquid earum corporis cum, dignissimos explicabo
+                    temporibus perferendis obcaecati excepturi.</p>
+                <button class="linkedin"><i class="fa-brands fa-linkedin"></i></button>
+                <button class="github"><i class="fa-brands fa-github"></i></button>
+            </div><!-- Fim apresentação do Luan-->
+            <!--Fim das divs de apresentação dos criadores -->
+        
+        </section>
+        <!--Fim da section de apresentação dos criadores-->
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!--Início da section de apresentação do projeto-->
+        <section class="quem-somos">
+            <h2>Conheça o MapaDev</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis iusto aspernatur nisi libero
+                cupiditate tempora quae, autem voluptate fuga! Odit, vitae eius. Placeat recusandae ab eius ipsum
+                aliquam deleniti magnam.
+                Accusantium placeat harum facilis nam fugit magnam quo dolor. Qui at accusamus nemo ratione dolores
+                veritatis iusto repellendus et ea sed? Sequi fugiat a minus similique qui dolorum accusantium labore!
+                Veniam totam amet nisi quo dolore sed consequuntur officiis alias asperiores reiciendis omnis harum vero
+                ab nam ad odit repellendus veritatis quidem expedita saepe magni, inventore dolores explicabo ratione!
+                Fugiat.
+                Quod nam voluptatum porro cupiditate optio voluptas. Eos dicta iusto nihil officia cumque beatae,
+                officiis ad reprehenderit dolorem porro natus iste vero commodi temporibus ipsam quibusdam optio animi
+                corporis odit?
+                Sunt quia necessitatibus praesentium. Reiciendis dolorem placeat eos necessitatibus odit pariatur,
+                voluptas eaque sed, recusandae consequatur libero aspernatur quasi aliquid nisi blanditiis commodi
+                tempore ipsam quia? Sequi veritatis quas nihil!
+                Consequatur repudiandae fuga harum ipsum officia, dolore debitis corporis et quo pariatur numquam
+                voluptates, facilis molestias illo delectus est consequuntur labore odio distinctio asperiores fugiat?
+                Eaque nisi tempora perspiciatis saepe?
+                Fugit nulla iusto, culpa tempora fuga impedit repellendus consectetur vero minus dolorum eum non omnis,
+                temporibus cum fugiat, recusandae neque enim voluptatem! Vel magni architecto blanditiis ut veniam
+                ratione quibusdam.
+                Consequatur, doloribus at accusamus iusto voluptatem vitae laudantium deserunt fugit! Maxime quisquam
+                dicta, minima ipsam ex eveniet dignissimos sequi tempora pariatur voluptatum laborum quae corporis autem
+                nam, error hic placeat.
+                Rerum praesentium dolore ullam suscipit asperiores saepe quos blanditiis assumenda est fugit quasi ad
+                quae, explicabo voluptate cum nobis dolorum temporibus beatae illum nemo earum quaerat mollitia! Nulla,
+                quisquam omnis.
+                In esse non omnis harum dolore labore obcaecati animi, quasi doloremque quas rerum quae soluta fuga
+                nesciunt debitis accusantium. Quasi animi accusamus maxime enim quidem? Pariatur corrupti consequatur
+                eveniet beatae!</p>
+            <img src="" alt=""> <!--Imagem(?)-->
+        </section> 
+        <!--Fim da section de apresentação do projeto-->
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------->
+        
+        <!--Inicio da section das intruções do site-->
+        <section class="como-usar">
+            <h2>Como usar o site?</h2> <!--Título-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nemo, dicta voluptate odio maxime
+                quasi quisquam quod officia quis dolores reiciendis corrupti itaque voluptatibus hic aut aliquid qui
+                inventore. Accusantium?
+                Neque et tempore accusamus nobis totam dolor, aliquam animi magni numquam quis porro quas atque eius
+                sint fugiat voluptatibus unde deserunt libero nostrum iste repudiandae soluta id? Blanditiis, magnam
+                libero.
+                Sit numquam tempore expedita fugit doloribus laborum consequatur alias labore odio repellat optio modi
+                eaque esse deleniti eum excepturi, illo architecto unde eius praesentium dicta. Ducimus molestiae vitae
+                eligendi numquam.</p> <!--Parágrafo-->
+
+                <!--Segui a estrutura do primeiro layout, onde tinha 3 div's contendo as trilhas de cada nível (isso pode ser mudado caso queiram)-->
+            <div class="como-usar-iniciante"></div> 
+            <div class="como-usar-intermediario"></div>
+            <div class="como-usar-avancado"></div>
+        </section>
+        <!-- Fim da section de instruções-->
+
+        <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!--Início da section do público alvo do site-->
+        <section class="publico-alvo">
+            <h2>Para quem é o MapaDev?</h2> <!--Título-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit placeat nobis neque labore, ab
+                recusandae, nam quaerat natus autem eius voluptatibus, illo ratione deleniti quas? Nostrum, neque
+                facilis? Soluta?
+                Culpa magnam asperiores possimus animi, libero rem velit nemo dolorum aliquam itaque, laborum corporis
+                deleniti accusamus error aliquid odit quam, labore quia? Incidunt facere fugiat accusantium dignissimos,
+                tempora error aut.</p> <!--Parágrafo-->
+                
+                <!--Segui o layout inicial e coloquei 4 div's contentendo o que parece ser 4 publico-alvo diferentes-->
+            
+            <div>
+                <i></i>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div>
+                <i></i>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div>
+                <i></i>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div>
+                <i></i>
+                <h4></h4>
+                <p></p>
+            </div>
+
+            <!--Fim das div's de 4 publico-alvo-->
+
+        </section>
+        <!--Fim da section do publico alvo-->
+
+     </main>
+     <!--Fim da parte principal do site-->
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Inicio Rodapé-->
+    <footer>
+        <p>&copy; 2025 MapaDev. Todos os direitos reservados.</p>
+    </footer>
+    <!--Fim Rodapé-->
 </body>
+<!--Fim do body-->
 </html>
