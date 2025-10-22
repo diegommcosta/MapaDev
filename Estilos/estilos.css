@@ -15,13 +15,22 @@ html, body{
 }
 
 header {
-    max-width: 1200px; /*largura máxima da página*/
+    width: 100vw; /*largura que o header vai ocupar na página*/
+    min-height: 60px; /*minimo de altura que o header terá*/
     display: flex; /*deixa os itens do container flexiveis*/
-    justify-content: space-around; /*divide os espaços igualmente entre os itens deixando, inclusive, um espaço no inicio e no final*/ 
+    align-items: center;
+    justify-content: space-between; /*divide os espaços igualmente entre os itens deixando, inclusive, um espaço no inicio e no final*/ 
     background-color: rgb(212, 208, 208); /*cor temporária, apenas para melhor visualização*/
     
     }
+header img{
+width: auto;
+max-height: 180px;
+border-radius: 10px;
 
+    
+    
+}
  
 nav a{
     text-decoration: none;/*retira o sublinhado*/
@@ -55,5 +64,17 @@ border-radius: 50px; /*Meu desejo era tirar a borda por completa, mas não conse
 
 }
 
+
+main {  
+
+    background-color:  #c5c3c3; /*cor de fundo apenas para visualização*/
+}
+
+
+footer {
+
+    background-color: #3a3a3a; /*cor de fundo apenas para visualização*/
+    color: #c5c3c3; /*cor de fonte apenas para visualização*/
+}
 
 
