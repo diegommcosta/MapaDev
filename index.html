@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/estilos.css">
     <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
     <title>MapaDev</title>
 </head>
@@ -10,18 +11,21 @@
     <header> <!-- Cabeçalho do site -->
         <p>Logo</p>
         <nav> <!-- Menu de navegação -->           
-            <ul>
-                <li><a href="iniciante.html">Iniciante</a></li>
-                <li><a href="intermediario.html">Intermediário</a></li>
-                <li><a href="avancado.html">Avançado</a></li>
-            </ul>            
+            <!--ul e li's retirados para que o menu passe de bloco para linha e fiquem alinhados da forma do layout-->
+                <a href="iniciante.html">Iniciante</a> 
+                <a href="intermediario.html">Intermediário</a>
+                <a href="avancado.html">Avançado</a>           
         </nav>
         <div class="pesquisa-container"> <!-- Botão de pesquisa -->
             <input type="text" class="pesquisa-input" placeholder="Pesquisar...">
             <button class="pesquisa-btn">
-            <div><i class="fa-solid fa-magnifying-glass"></i></div> <!-- lupa envolvida por uma div para dar flexbilidade posteriormente -->
+            <i class="fa-solid fa-magnifying-glass"></i> <!-- lupa  -->
+            </button>
+            <button class="tema-btn">
+                <i class="fa-solid fa-moon"></i> <!--botão para mudança de tema "lua"-->
             </button>
         </div>
     </header>
+    
 </body>
 </html>
