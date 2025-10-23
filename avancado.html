@@ -17,12 +17,785 @@
                 <li><a href="avancado.html">Avançado</a></li>
             </ul>            
         </nav>
-        <div class="pesquisa-container"> <!-- Botão de pesquisa -->
-            <input type="text" class="pesquisa-input" placeholder="Pesquisar...">
-            <button class="pesquisa-btn">
-            <div><i class="fa-solid fa-magnifying-glass"></i></div> <!-- lupa envolvida por uma div para dar flexbilidade posteriormente -->
+        <div class="btn-container"> <!-- Botão de pesquisa e de mudança de tema -->
+            <form role="search"> <!-- Botão de pesquisa -->
+                <input type="search" class="pesquisa-input" placeholder="Pesquisar...">
+                <button type="submit" class="pesquisa-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i> <!-- lupa  -->
+                </button>
+            </form>
+            <button class="tema-btn">
+                <i class="fa-solid fa-moon"></i> <!--botão para mudança de tema "lua"->"sol"-->
             </button>
         </div>
     </header>
+
+    <div class="pagina-container"> <!-- div container para organizar o nav ao lado do conteúdo -->
+        <nav> <!-- menu de navegação lateral -->
+            <ul> <!-- Lista dos tópicos principais -->
+                <li> <!-- topico principal 1 -->
+                    <a href="#typescript">TypeScript</a></li>
+                    <ul> <!-- lista de subtopicos -->
+                        <li><a href="#typescript--videos">Vídeos</a></li>
+                        <li><a href="#typescript--cursos">Cursos, plataformas, playlists</a></li>
+                        <li><a href="#typescript--artigos">Artigos, guias, tutoriais</a></li>
+                        <li><a href="#typescript--doc">Documentação</a></li>
+                    </ul> <!-- fim da lista de subtopicos -->
+                </li>
+
+                <li> <!-- topico principal 2 -->
+                    <a href="#arquitetura"></a>Arquitetura de Software</li>
+                    <ul> <!-- lista de subtopicos -->
+                        <li><a href="#arquitetura--videos">Vídeos</a></li>
+                        <li><a href="#arquitetura--cursos">Cursos, plataformas, playlists</a></li>
+                        <li><a href="#arquitetura--artigos">Artigos, guias, tutoriais</a></li>
+                        <li><a href="#arquitetura--doc">Documentação</a></li>
+                    </ul>
+                </li>
+
+                <li> <!-- topico principal 3 -->
+                    <a href="#testes"></a>Testes Automatizados</li>
+                    <ul> <!-- lista de subtopicos -->
+                        <li><a href="#testes--videos">Vídeos</a></li>
+                        <li><a href="#testes--cursos">Cursos, plataformas, playlists</a></li>
+                        <li><a href="#testes--artigos">Artigos, guias, tutoriais</a></li>
+                        <li><a href="#testes--doc">Documentação</a></li>
+                    </ul>
+                </li>
+
+                <li> <!-- topico principal 4 -->
+                    <a href="#docker"></a>Docker</li>
+                    <ul> <!-- lista de subtopicos -->
+                        <li><a href="#docker--videos">Vídeos</a></li>
+                        <li><a href="#docker--cursos">Cursos, plataformas, playlists</a></li>
+                        <li><a href="#docker--artigos">Artigos, guias, tutoriais</a></li>
+                        <li><a href="#docker--doc">Documentação</a></li>
+                    </ul>
+                </li>
+
+                <li> <!-- topico principal 5 -->
+                    <a href="#cloud"></a>Cloud Computing</li>
+                    <ul> <!-- lista de subtopicos -->
+                        <li><a href="#cloud--videos">Vídeos</a></li>
+                        <li><a href="#cloud--cursos">Cursos, plataformas, playlists</a></li>
+                        <li><a href="#cloud--artigos">Artigos, guias, tutoriais</a></li>
+                        <li><a href="#cloud--doc">Documentação</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- fim da lista de topicos -->
+        </nav> <!-- fim da navegação -->
+         <!----------------------------------------------------------------------------------------------------------------------------------------->
+        <main> <!-- conteúdo da página -->
+
+        <!-- todo conteúdo todo conteúdo precisa ser separado em section para os links de navegação possam navegar até eles -->
+            <section id="typescript" class="topico-principal"> <!-- seção do tópico principal 1 -->
+                <h1>TypeScript</h1>
+                <section id="typescript--videos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="typescript--cursos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de cursos -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>                    
+                </section> <!-- fim da seção do subtópico -->
+                <section id="typescript--artigos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="typescript--doc"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section > <!-- fim da seção do subtópico -->
+            </section> <!-- fim da seção do tópico 1 -->
+            
+             <!----------------------------------------------------------------------------------------------------------------------------------------->
+            
+            <section id="arquitetura" class="topico-principal"> <!-- seção do tópico principal 2 -->
+                <h1>TypeScript</h1>
+                <section id="arquitetura--videos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="arquitetura--cursos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de cursos -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>                    
+                </section> <!-- fim da seção do subtópico -->
+                <section id="arquitetura--artigos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="arquitetura--doc"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section > <!-- fim da seção do subtópico -->
+            </section> <!-- fim da seção do tópico 2 -->
+            
+            <!----------------------------------------------------------------------------------------------------------------------------------------->
+            
+            <section id="testes" class="topico-principal"> <!-- seção do tópico principal 3 -->
+                <h1>TypeScript</h1>
+                <section id="testes--videos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="testes--cursos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de cursos -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>                    
+                </section> <!-- fim da seção do subtópico -->
+                <section id="testes--artigos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="testes--doc"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section > <!-- fim da seção do subtópico -->
+            </section> <!-- fim da seção do tópico 3 -->
+            
+            <!----------------------------------------------------------------------------------------------------------------------------------------->
+            
+            <section id="docker" class="topico-principal"> <!-- seção do tópico principal 4 -->
+                <h1>TypeScript</h1>
+                <section id="docker--videos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="docker--cursos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de cursos -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>                    
+                </section> <!-- fim da seção do subtópico -->
+                <section id="docker--artigos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="docker--doc"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section > <!-- fim da seção do subtópico -->
+            </section> <!-- fim da seção do tópico 4 -->
+
+             <!----------------------------------------------------------------------------------------------------------------------------------------->
+            
+            <section id="cloud" class="topico-principal"> <!-- seção do tópico principal 5 -->
+                <h1>TypeScript</h1>
+                <section id="cloud--videos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="cloud--cursos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de cursos -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>                    
+                </section> <!-- fim da seção do subtópico -->
+                <section id="cloud--artigos"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <h3>Conteúdos em Portugês</h3>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                    <h3>Conteúdos em Inglês</h3>
+                    <ul> <!-- lista de conteúdos em ingles -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section> <!-- fim da seção do subtópico -->
+                <section id="cloud--doc"> <!-- seção do subtópico -->
+                    <h2>Vídeos</h2>
+                    <ul> <!-- lista de conteúdos em pt-br -->
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                TypeScript // Dicionário do Programador — Código Fonte TV
+                            </a>
+                            <p>Aprenda sobre o superset do JavaScript que vem ganhando muitos adeptos...
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=..." target="_blank" rel="noopener noreferrer">
+                                Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                            </a>
+                            <p>Entenda o básico do TypeScript, comparando ao JavaScript...</p>
+                        </li>
+                    </ul>
+                </section > <!-- fim da seção do subtópico -->
+            </section> <!-- fim da seção do tópico 5 -->
+        </main>
+    </div>
 </body>
 </html>
