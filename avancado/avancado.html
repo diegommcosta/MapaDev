@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Estilos/estilos.css">
     <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
     <title>MapaDev Avançado</title>
 </head>
@@ -31,7 +33,7 @@
         </div>
     </header>
 
-    <div class="pagina-container"> <!-- div container para organizar o nav ao lado do conteúdo -->
+    <main class="pagina-container"> <!-- div container para organizar o nav ao lado do conteúdo -->
         <nav> <!-- menu de navegação lateral -->
             <ul> <!-- Lista dos tópicos principais -->
                 <li> <!-- topico principal 1 -->
@@ -52,7 +54,7 @@
             </ul> <!-- fim da lista de topicos -->
         </nav> <!-- fim da navegação -->        
          <!----------------------------------------------------------------------------------------------------------------------------------------->
-        <main> <!-- conteúdo da página -->
+        <div class="conteudo"> <!-- conteúdo da página -->
         <!-- todo conteúdo todo conteúdo precisa ser separado em section para os links de navegação possam navegar até eles -->
             
         <section id="typescript"> <!-- inicio do tópico -->
@@ -226,7 +228,7 @@
                 </section>
             </div>
         </section> <!-- fim do tópico -->        
-        </main>
+        </div>
         <!----------------------------------------------------------------------------------------------------------------------------------------->
         <nav>
             <p>Nesta página</p>
@@ -237,6 +239,6 @@
                 <li><a href="#typescript--doc">Documentação</a></li>
             </ul> <!-- fim da lista de subtopicos -->
         </nav>
-    </div>
+    </main>
 </body>
 </html>
