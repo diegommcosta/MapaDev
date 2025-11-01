@@ -4,37 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="Estilos/estilos.css"> -->
     <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
     <title>MapaDev</title>
 </head>
 
 <body>
     <header> <!-- Início do Cabeçalho do site -->
-        <img src="Imagens/logo.png"
-             alt="Logo MapaDev: escudo futurista com um mapa digitalizado de rotas e um ícone de play/cursor no centro, sobre um fundo tecnológico com o texto 'Sua rota pelo código'. Representa um guia de aprendizado em programação."> <!--Imagem de logo criada pelo Gemini-->
-        <nav> <!-- Menu de navegação -->
-            <ul>
-                <li>
-                    <a href="iniciante.html">Iniciante</a>
-                </li>
-                <li>
-                    <a href="intermediario.html">Intermediário</a>
-                </li>
-                <li>
-                    <a href="avancado.html">Avançado</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-2 px-sm-2 px-lg-5" style="background-color: #e3f2fd;" data-bs-theme="light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MapaDev</a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Iniciante</a> <!-- Classe "active" tem q ser reposicionada conforme a página ativa -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Intermediário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="avancado/avancado.html">Avançado</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <button type="button" class="btn btn-primary rounded-circle">
+                <i class="bi bi-moon-fill"></i> <!--botão para mudança de tema "lua"->"sol"-->
+            </button>
         </nav>
-        <div class="btn-container"> <!-- Botão de pesquisa e de mudança de tema -->
-            <input type="text" class="pesquisa-input" placeholder="Pesquisar...">
-            <button class="pesquisa-btn">
-                <i class="fa-solid fa-magnifying-glass"></i> <!-- lupa  -->
-            </button>
-            <button class="tema-btn">
-                <i class="fa-solid fa-moon"></i> <!--botão para mudança de tema "lua"->"sol"-->
-            </button>
-        </div>
     </header> <!--Fim do Cabeçalho do site-->
 
  <!----------------------------------------------------------------------------------------------------------------------------------------->
