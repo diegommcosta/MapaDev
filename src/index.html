@@ -4,67 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- <link rel="stylesheet" href="Estilos/estilos.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!-- CSS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> <!-- JavaScript bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- Ícones bootstrap -->
     <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
+    <!--Componentes abaixo-->
+    <script src="header-componente.js" type="module"></script> <!--Componente do Header-->
+    <script src="footer-componente.js" type="module"></script> <!--Componente do Header-->
     <title>MapaDev</title>
 </head>
 
 <body>
-    <header> <!-- Início do Cabeçalho do site -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary py-2 px-sm-2 px-lg-5" style="background-color: #e3f2fd;" data-bs-theme="light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">MapaDev</a>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
-                    <ul class="nav nav-underline">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Iniciante</a> <!-- Classe "active" tem q ser reposicionada conforme a página ativa -->
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Intermediário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="avancado/avancado.html">Avançado</a>
-                        </li>
-                    </ul>
-                </div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-            <button type="button" class="btn btn-primary rounded-circle">
-                <i class="bi bi-moon-fill"></i> <!--botão para mudança de tema "lua"->"sol"-->
-            </button>
-        </nav>
-    </header> <!--Fim do Cabeçalho do site-->
-
- <!----------------------------------------------------------------------------------------------------------------------------------------->
+    <main-header></main-header> <!--Componente do Header-->
+    
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
 
     <!--Início da parte principal do site-->    
     <main> 
-        <!--Inicio da Section Hero Banner, com um titulo principal, um parágrafo e uma imagem-->
-        <section id="hero-banner">
-            <h1>Bem-vindo ao MapaDev!</h1> <!--Título -->
-            <p>Seu guia definitivo para navegar no universo do <strong>desenvolvimento web</strong>, desde os fundamentos até os tópicos mais avançados.</p>
-            <img src="Imagens/boas-vindas-img.png" alt=""> <!--Se aprovado, será colocado um print da tela Iniciante-->
+        <!--Inicio da Section Hero Banner-->
+        <section class="pt-5">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mt-5 mx-auto lh-1" style="max-width: 25rem;">Bem-vindo ao MapaDev!</h1>
+
+                <p class="lead fw-normal mb-4 mt-4 mx-auto" style="max-width: 40rem;">
+                Seu guia definitivo para navegar no universo do <strong>desenvolvimento web</strong>,
+                desde os fundamentos até os tópicos mais avançados.
+                </p>
+
+                <img src="/images/boas-vindas-img.png"
+                     alt="Preview da seção Iniciante do MapaDev" 
+                     class="img-fluid mt-5 rounded-top-4">
+            </div>
         </section>
         <!--Fim da section de boas vindas-->
 
         <!----------------------------------------------------------------------------------------------------------------------------------------->
 
-        <!--Início da section Quem Somos, com um título de seção, 3 cards com o nome, uma foto e uma apresentação do criador, além de dois botões, um do linkedIn e outro do GitHub de cada criador -->
-        <section id="quem-somos">
+        <!--Inicio seção quem somos -->
+        <section>
             <h2>Quem está construindo o MapaDev?</h2> <!--Título da section-->
-
+            
             <div class="quem-somos--cards-container">
                 <div class="quem-somos--cards-items"> <!--Card do Diego-->
-                    <img src="Imagens/diego.png" alt="">
+                    <img src="/images/diego.png" alt="">
                     <h3>Diego Manoel</h3>
                     <p>[Coloque aqui uma breve descrição sobre seus interesses principais em tecnologia, o que você busca aprender com este projeto e, talvez, suas principais habilidades ou focos de estudo atuais.]</p>
     
@@ -78,7 +60,7 @@
                 <!----------------------------------------------------------------------------------------------------------------------------------------->
     
                 <div class="quem-somos--cards-items"> <!--Card do Thiago-->
-                    <img src="Imagens/thiago.jpeg" alt="">
+                    <img src="/images/thiago.jpeg" alt="">
                     <h3>Thiago De Angelis</h3>
                     <p>[Coloque aqui uma breve descrição sobre seus interesses principais em tecnologia, o que você busca aprender com este projeto e, talvez, suas principais habilidades ou focos de estudo atuais.]</p>
                     <button class="linkedin"><i class="fa-brands fa-linkedin"></i></button>
@@ -88,7 +70,7 @@
                 <!----------------------------------------------------------------------------------------------------------------------------------------->
     
                 <div class="quem-somos--cards-items"> <!--Card do Luan-->
-                    <img src="Imagens/luan.jpeg" alt="">
+                    <img src="/images/luan.jpeg" alt="">
                     <h3>Luan Matheus</h3>
                     <p>[Coloque aqui uma breve descrição sobre seus interesses principais em tecnologia, o que você busca aprender com este projeto e, talvez, suas principais habilidades ou focos de estudo atuais.]</p>
                     <button class="linkedin"><i class="fa-brands fa-linkedin"></i></button>
@@ -103,7 +85,7 @@
         <!----------------------------------------------------------------------------------------------------------------------------------------->
 
         <!--Início da section de apresentação do projeto-->
-        <section id="apresentacao">
+        <section>
             <h2>Conheça o MapaDev</h2>
             <p>O MapaDev é um repositório de conteúdo pensado para <strong>organizar a jornada de estudos</strong> em <strong>desenvolvimento web</strong>. A ideia é simples: centralizar os tópicos essenciais em um único lugar, oferecendo um caminho lógico para quem quer aprender a programar para a web, desde a primeira linha de HTML até a complexidade da arquitetura em nuvem.
 
@@ -115,7 +97,7 @@
         <!----------------------------------------------------------------------------------------------------------------------------------------->
         
         <!--Inicio da section das intruções do site-->
-        <section id="como-usar">
+        <section>
             <h2>Como usar o site?</h2> <!--Título-->
             <p>Navegar pelo MapaDev é intuitivo. Organizamos todo o conteúdo em três grandes trilhas de conhecimento.</p> <!--Parágrafo-->
             <!--Segui a estrutura do primeiro layout, onde tinha 3 div's contendo as trilhas de cada nível (isso pode ser mudado caso queiram)-->
@@ -129,7 +111,7 @@
         <!----------------------------------------------------------------------------------------------------------------------------------------->
 
         <!--Início da section do público alvo do site-->
-        <section id="publico-alvo">
+        <section>
             <h2>Para quem é o MapaDev?</h2> <!--Título-->
             <p>Criamos o MapaDev pensando em diferentes perfis de estudantes e profissionais.</p> <!--Parágrafo-->                
             <div class="publico-alvo--cards-container"> <!--Container agrupando os cards-->   
@@ -164,11 +146,7 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!--Inicio Rodapé-->
-    <footer>
-        <p>&copy; 2025 MapaDev. Todos os direitos reservados.</p>
-    </footer>
-    <!--Fim Rodapé-->
+    <main-footer></main-footer> <!--Componente do Footer-->
 </body>
 <!--Fim do body-->
 </html>
