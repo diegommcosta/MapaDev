@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="Estilos/estilos.css"> -->
+    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
+    <title>MapaDev Intermediário</title>
+</head>
+<body>
+    <header> <!-- Início do Cabeçalho do site -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-2 px-sm-2 px-lg-5" style="background-color: #e3f2fd;" data-bs-theme="light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MapaDev</a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="iniciante/iniciante.html">Iniciante</a> <!-- Classe "active" tem q ser reposicionada conforme a página ativa -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="intermediario/intermediario.html">Intermediário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="avancado/avancado.html">Avançado</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <button type="button" class="btn btn-primary rounded-circle">
+                <i class="bi bi-moon-fill"></i> <!--botão para mudança de tema "lua"->"sol"-->
+            </button>
+        </nav>
+    </header> <!--Fim do Cabeçalho do site-->
+    <main class="pagina-container"> <!-- div container para organizar o nav ao lado do conteúdo -->
+        <nav> <!-- menu de navegação lateral -->
+            
+            <ul class="nav nav-underline flex-column"> <!-- Lista dos tópicos principais usando bootstrap -->
+                <li class="nav-item"> <!-- topico principal 1 -->
+                    <a class="nav-link active"  aria-current="page" href="#bootstrap">Bootstrap</a>
+                </li> <!-- Classe "active" tem q ser reposicionada conforme a página ativa -->
+                <li class="nav-item"> <!-- topico principal 2 -->
+                    <a class="nav-link" href="#react">React</a>
+                </li>
+                <li class="nav-item"> <!-- topico principal 3 -->
+                    <a class="nav-link" href="#nodeJs">NodeJs</a>
+                </li>
+                <li class="nav-item"> <!-- topico principal 4 -->
+                    <a class="nav-link" href="#expressjs">ExpressJs</a>
+                </li>
+            </ul> <!-- fim da lista de subtopicos -->
+        </nav>
+        
+    
+         <!----------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="conteudo"> <!-- conteúdo da página -->
+        <!-- todo conteúdo todo conteúdo precisa ser separado em section para os links de navegação possam navegar até eles -->
+            
+        <section id="bootstrap"> <!-- inicio do tópico -->
+            <h2>Bootstrap</h2>
+            <div class="conteudo-container"> <!-- div para o fundo diferente e organizar os subtópicos -->
+                <section id="bootstrap--videos"> <!-- inicio do subtópico -->
+                    <h3>Vídeos</h3>
+
+                    <h4>Conteúdos em Português</h4>
+                    <div class="conteudo-card"> 
+                        <p>Live completa do professor Rodolfo Mori cobrindo Bootstrap do básico ao mais avançado, com exemplos práticos</p>
+                        <a href="https://www.youtube.com/watch?v=n_nSfDoFN8E" target="_blank" class="conteudo-card--btn"> <!--Atributo target="_blank" adicionado para o usuário clicar no link e ir para uma nova aba-->
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Curso de BOOTSTRAP | Tornando-se um Programador na Prática - DevClub | Programação
+                        </a>
+                    </div>
+                    
+                    <div class="conteudo-card"> 
+                        <p>Série de 32 vídeos do zero ao avançado em Bootstrap em português de Portugal ministrado pelo professor João Ribeiro</p>
+                        <a href="https://www.youtube.com/watch?v=2c-EFQFyv4Y&list=PLXik_5Br-zO-iwhAe12sirOo_LZ0t-qEm" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Bootstrap 5 (Curso Fundamental ) - João Ribeiro 
+                        </a>
+                    </div>
+                    
+                    <div class="conteudo-card"> 
+                        <p>Matheus Battisti ensina na prática como usar Bootstrap</p>
+                        <a href="https://www.youtube.com/watch?v=jJUpJA1GJHw" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Aprenda Bootstrap 5 criando um projeto — Matheus Battisti - Hora de Codar
+                        </a>
+                    </div>
+
+                    <h4>Conteúdos em Inglês</h4>
+                    <div class="conteudo-card"> 
+                        <p>Curso completo focado em aprender Bootstrap desde o início, cobrindo componentes, grid, utilitários etc.</p>
+                        <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Bootstrap CSS Framework - freeCodeCamp.org
+                        </a>
+                    </div>
+
+                    <div class="conteudo-card"> 
+                        <p>Um curso acelerado que cobre de forma eficiente os fundamentos do Bootstrap 5 — sistema de grade, componentes populares, classes utilitárias — perfeito para desenvolvedores que querem entender rapidamente como aplicar o framework.</p>
+                        <a href="https://www.youtube.com/watch?v=Jyvffr3aCp0" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Bootstrap 5 Crash Course - Web Dev Simplified
+                        </a>
+                    </div>
+                    
+                    <div class="conteudo-card"> 
+                        <p>Neste curso do canal Traversy Media, você aprende a usar o Bootstrap 5, desde o nível iniciante.</p>
+                        <a href="https://www.youtube.com/watch?v=4sosXZsdy-s" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Bootstrap 5 Crash Course | Website Build & Deploy - Traversy Media
+                        </a>
+                    </div>
+                </section>
+                <!----------------------------------------------------------------------------------------------------------------------------------------->
+                <hr>
+                <section id="bootstrap--cursos"> <!-- inicio do subtópico -->
+                    <h3>Cursos, plataformas, playlists</h3>
+
+                    <div class="conteudo-card"> 
+                        <p>A w3schools disponibiliza o aprendizado em bootstrap passo a passo com práticas com editor online para você modificar e ver o resultado</p>
+                        <a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Aprenda Bootstrap fazendo você mesmo com a W3Schools
+                        </a>
+                    </div>
+                    
+                    <div class="conteudo-card"> 
+                        <p>Playlist gratuita, que aborda desde o ambiente até personalização avançada do Bootstrap 5</p>
+                        <a href="https://www.youtube.com/watch?v=MJCvdDQLAeQ&list=PL0YuSuacUEWuJN3qb6NP15bzqd8w_oAj7" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Playlist de Bootstrap 5 - Ricardo Maroquio
+                        </a>
+                    </div>
+                    
+                    <div class="conteudo-card"> 
+                        <p>Curso em inglês, gratuito no módulo básico, que ensina como criar websites responsivos com Bootstrap</p>
+                        <a href="https://www.codecademy.com/learn/learn-bootstrap" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Learn Bootstrap - Codecademy
+                        </a>
+                    </div>
+                </section>
+                <!----------------------------------------------------------------------------------------------------------------------------------------->
+                <hr>
+                <section id="bootstrap--artigos"> <!-- inicio do subtópico -->
+                    <h3>Artigos, guias, tutoriais</h3>
+
+                    <div class="conteudo-card"> 
+                        <p>Tutorial que avança em passos — cobrindo desde o básico (grid, tipografia) até componentes mais avançados (modais, acordeões) — com explicações claras e muitos exemplos reais.</p>
+                        <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Bootstrap 5 Tutorial – An Ultimate Guide for Beginners – Tutorial Republic
+                        </a>
+                    </div>
+                    
+                    <div class="conteudo-card"> 
+                        <p>Guia que aborda as principais mudanças do Bootstrap 5 (como remoção de jQuery, novas utilitárias), além dos fundamentos para quem quer entender rapidamente o framework.</p>
+                        <a href="https://www.geeksforgeeks.org/bootstrap/bootstrap-5" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Bootstrap 5 Tutorial | GeeksforGeeks
+                        </a>
+                    </div>
+                    
+                    <div class="conteudo-card"> 
+                        <p>Esse repositório no GitHub apresenta um RoadMap e mostra todas as atualizações do Bootstrap 5</p>
+                        <a href="https://github.com/orgs/twbs/discussions/41370" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Bootstrap Update and Roadmap 
+                        </a>
+                    </div>
+                    
+                    
+                </section>
+                <!----------------------------------------------------------------------------------------------------------------------------------------->
+                <hr>
+                <section id="bootstrap--doc"> <!-- inicio do subtópico -->
+                    <h3>Documentação</h3>
+
+                    <div class="conteudo-card"> 
+                        <p>Documentação principal, exemplos, componentes, como instalar, etc.</p>
+                        <a href="https://getbootstrap.com/" target="_blank" class="conteudo-card--btn">
+                            <i>incone</i> <!-- adicionar ícone conforme conteúdo: vídeo, artigo, plataforma, documentação... -->
+                            Bootstrap (oficial)
+                        </a>
+                    </div>
+                    
+                    
+                </section>
+            </div>
+        </section> <!-- fim do tópico -->        
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------->
+        <nav>
+            <p>Nesta página</p>
+            <ul class="nav nav-underline flex-column"> <!-- lista de subtopicos -->
+                <li class="nav-item">
+                    <a class="nav-link active"  aria-current="page" href="#bootstrap--videos">Vídeos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bootstrap--cursos">Cursos, plataformas, playlists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bootstrap--artigos">Artigos, guias, tutoriais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bootstrap--doc">Documentação</a>
+                </li>
+            </ul> <!-- fim da lista de subtopicos -->
+        </nav>
+    </main>
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Inicio Rodapé-->
+    <footer>
+        <p>&copy; 2025 MapaDev. Todos os direitos reservados.</p>
+    </footer>
+    <!--Fim Rodapé-->
+</body>
+</html>
