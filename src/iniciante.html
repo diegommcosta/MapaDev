@@ -10,10 +10,41 @@
     <!--Componentes abaixo-->
     <script src="header-componente.js"></script> <!--Componente do Header-->
     <script src="footer-componente.js"></script> <!--Componente do Footer-->
+    <script src="iniciante-nav-esquerda-componente.js"></script> <!--Componente do Nav da Esquerda-->
+    <script src="iniciante-nav-direita-componente.js"></script> <!--Componente do Nav da Direita-->
     <title>MapaDev Iniciante</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#nav-subtopics" data-bs-offset="80">
     <main-header></main-header> <!--Componente do Header-->
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Só aparece no Mobile-->    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTopics" aria-labelledby="offcanvasTopicsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopicsLabel">Tópicos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <iniciante-nav-esquerda></iniciante-nav-esquerda> <!--Componente do Nav da Esquerda no Mobile-->
+        </div>
+    </div>
+
+    <main class="container-fluid p-5"> <!--Container das Navs e do Conteúdo-->
+        <div class="row g-5"> <!--Div para garantir a sequencia: Nav-Esquerda, Conteúdo, Nav-Direita-->
+            
+            <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->               
+                <iniciante-nav-esquerda></iniciante-nav-esquerda>
+            </nav>
+
+            <div class="col-lg-8"> <!--Inicio do conteúdo-->
+                
+            </div>
+
+            <nav class="col-2">
+                <iniciante-nav-direita></iniciante-nav-direita> <!--Componente do Nav da Direita-->
+            </nav>
+        </div>
+    </main>
 
     <!----------------------------------------------------------------------------------------------------------------------------------------->
     

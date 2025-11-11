@@ -1,4 +1,4 @@
-class AvancadoNavEsquerda extends HTMLElement {
+class IntermediarioNavEsquerda extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `       
         <div class="sticky-top pt-3">
@@ -25,4 +25,4 @@ class AvancadoNavEsquerda extends HTMLElement {
     }    
 }
 
-customElements.define('avancado-nav-esquerda', AvancadoNavEsquerda);
+customElements.define('intermediario-nav-esquerda', IntermediarioNavEsquerda);
