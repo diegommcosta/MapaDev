@@ -18,205 +18,30 @@
     <main-header></main-header> <!--Componente do Header-->
 
     <!----------------------------------------------------------------------------------------------------------------------------------------->
-        
+    <!--Só aparece no Mobile-->    
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTopics" aria-labelledby="offcanvasTopicsLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasTopicsLabel">Tópicos</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <avancado-nav-esquerda></avancado-nav-esquerda>
+            <avancado-nav-esquerda></avancado-nav-esquerda> <!--Componente do Nav da Esquerda no Mobile-->
         </div>
     </div>
 
-    <main class="container-fluid p-5 bg-light"> <!--Container das Navs e do Conteúdo-->
+    <main class="container-fluid p-5"> <!--Container das Navs e do Conteúdo-->
         <div class="row g-5"> <!--Div para garantir a sequencia: Nav-Esquerda, Conteúdo, Nav-Direita-->
             
             <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->               
                 <avancado-nav-esquerda></avancado-nav-esquerda>
             </nav>
 
-            <div class="col-lg-8 "> <!--Inicio do conteúdo-->
-                <section id="typescript">
-                    <h2 class="fw-bold mb-3">TypeScript</h2>
-                    
-                    <div class="bg-white shadow-sm rounded-4 p-4"> <!--Seções de conteúdos-->
-                        
-                        <section id="typescript-videos">
-                            <h3 class="fw-bold">Vídeos</h3>
-
-                            <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Português</h4>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda o básico de TypeScript, entenda suas particularidades e suas semelhanças e diferenças para o JavaScript.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-brands fa-youtube me-2"></i>
-                                    Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
-                                </a>
-                            </div>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Entenda tudo sobre o superset de JavaScript que vêm ganhando muitos adeptos. Veja porque e como o TypeScript surgiu e algumas de suas características.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-brands fa-youtube me-2"></i>
-                                    TypeScript // Dicionário do Programador — Código Fonte TV
-                                </a>
-                            </div>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aborda tópicos avançados como interfaces extensíveis, inferência de tipos, e integração com Node.js e React.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-brands fa-youtube me-2"></i>
-                                    TypeScript na Prática (Avançado) — Rocketseat
-                                </a>
-                            </div>
-
-                            <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Inglês</h4>
-
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda sobre tipos condicionais, inferência de tipos e uso avançado de generics em projetos profissionais.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-brands fa-youtube me-2"></i>
-                                    Advanced TypeScript (Infer, Extends, Mapped Types) — Web Dev Simplified
-                                </a>
-                            </div>
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Série de desafios práticos com TypeScript para quem quer dominar o sistema de tipos de forma aplicada.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-brands fa-youtube me-2"></i>
-                                    Total TypeScript — Advanced Challenges (Matt Pocock)
-                                </a>
-                            </div>
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Tutorial para aprender TypeScript, desde o nível iniciante.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-brands fa-youtube me-2"></i>
-                                    Learn TypeScript - Full Tutorial — freecodecamp.org
-                                </a>
-                            </div>
-                        </section>
-                        
-                        <hr class="my-4"> <!--Separador de seções-->
-                        
-                        <section id="typescript-cursos">
-                            <h3 class="fw-bold">Cursos, plataformas, playlists</h3>
-
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-solid fa-layer-group me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
-                                </a>
-                            </div>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</O>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-solid fa-layer-group me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
-                                </a>
-                            </div>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Plataforma interativa com desafios e lições práticas sobre tipagem avançada, inferência e padrões de projeto.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-solid fa-layer-group me-2"></i>
-                                    TypeScript Pro - Curso Interativo (Matt Pocock)
-                                </a>
-                            </div>
-                        </section>
-
-                        <hr class="my-4"> <!--Separador de seções-->
-
-                        <section id="typescript-artigos">
-                            <h3 class="fw-bold">Artigos, guias, tutoriais</h3>
-
-                            <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Português</h4>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda o básico de TypeScript, entenda suas particularidades e suas semelhanças e diferenças para o JavaScript.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
-                                </a>
-                            </div>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Entenda tudo sobre o superset de JavaScript que vêm ganhando muitos adeptos. Veja porque e como o TypeScript surgiu e algumas de suas características.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    TypeScript // Dicionário do Programador — Código Fonte TV
-                                </a>
-                            </div>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aborda tópicos avançados como interfaces extensíveis, inferência de tipos, e integração com Node.js e React.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    TypeScript na Prática (Avançado) — Rocketseat
-                                </a>
-                            </div>
-
-                            <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Inglês</h4>
-
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda sobre tipos condicionais, inferência de tipos e uso avançado de generics em projetos profissionais.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Advanced TypeScript (Infer, Extends, Mapped Types) — Web Dev Simplified
-                                </a>
-                            </div>
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Série de desafios práticos com TypeScript para quem quer dominar o sistema de tipos de forma aplicada.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Total TypeScript — Advanced Challenges (Matt Pocock)
-                                </a>
-                            </div>
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Tutorial para aprender TypeScript, desde o nível iniciante.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Learn TypeScript - Full Tutorial — freecodecamp.org
-                                </a>
-                            </div>
-                        </section>
-
-                        <hr class="my-4"> <!--Separador de seções-->
-                        
-                        <section id="typescript-doc">
-                            <h3 class="fw-bold">Documentação</h3>
-
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
-                                </a>
-                            </div>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</O>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
-                                </a>
-                            </div>
-                            
-                            <div class="bg-light p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Plataforma interativa com desafios e lições práticas sobre tipagem avançada, inferência e padrões de projeto.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-white shadow-sm rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    TypeScript Pro - Curso Interativo (Matt Pocock)
-                                </a>
-                            </div>
-                        </section>
-                    </div>
-                </section>
+            <div class="col-lg-8"> <!--Inicio do conteúdo-->
+                
             </div>
 
             <nav class="col-2">
-                <avancado-nav-direita></avancado-nav-direita>
+                <avancado-nav-direita></avancado-nav-direita> <!--Componente do Nav da Direita-->
             </nav>
         </div>
     </main>

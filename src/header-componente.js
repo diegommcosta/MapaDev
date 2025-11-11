@@ -2,6 +2,20 @@ const caminhoAtual = window.location.pathname.split("/").pop(); //Seleciona o ca
 
 class Header extends HTMLElement {
     connectedCallback(){
+        const iniciante = [
+            "iniciante.html"
+        ];
+        const intermediario = [
+            "intermediario.html"
+        ];
+        const avancado = [
+            "avancado.html", 
+            "avancado-typescript.html", 
+            "avancado-testes-automatizados.html", 
+            "avancado-docker.html", 
+            "avancado-arquitetura-software.html", 
+            "avancado-cloud-computing.html"
+        ];
 
         this.innerHTML = `
         <header>
@@ -24,13 +38,13 @@ class Header extends HTMLElement {
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline justify-content-center">
                             <li class="nav-item">
-                            <a class="nav-link ${caminhoAtual === "iniciante.html" ? "active": ""}" href="iniciante.html">Iniciante</a>
+                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""}" href="iniciante.html">Iniciante</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${caminhoAtual === "intermediario.html" ? "active": ""}" href="intermediario.html">Intermediário</a>
+                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""}" href="intermediario.html">Intermediário</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${caminhoAtual === "avancado.html" || caminhoAtual === "avancado-testes-automatizados.html" || caminhoAtual === "avancado-docker.html" || caminhoAtual === "avancado-arquitetura-software.html" || caminhoAtual === "avancado-cloud-computing.html" ? "active": ""}" href="avancado.html">Avançado</a>
+                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""}" href="avancado.html">Avançado</a>
                             </li>
                         </ul>
 
