@@ -21,12 +21,12 @@
 
     <!--Início da parte principal do site-->    
     <main> 
-        <!--Inicio da Section Hero Banner-->
+        <!--Inicio da Section do Hero Banner-->
         <section class="pt-5">
             <div class="container text-center">
                 <h1 class="display-4 fw-bold mt-5 mx-auto lh-1" style="max-width: 25rem;">Bem-vindo ao MapaDev!</h1>
 
-                <p class="lead fw-normal mb-4 mt-4 mx-auto" style="max-width: 40rem;">
+                <p class="lead fw-normal mb-4 mx-auto p-3" style="max-width: 42rem;">
                 Seu guia definitivo para navegar no universo do <strong>desenvolvimento web</strong>,
                 desde os fundamentos até os tópicos mais avançados.
                 </p>
@@ -36,61 +36,129 @@
                      class="img-fluid mt-5 rounded-top-4">
             </div>
         </section>
-        <!--Fim da section de boas vindas-->
+        <!--Fim da section do Hero Banner-->
 
         <!----------------------------------------------------------------------------------------------------------------------------------------->
 
-        <!--Inicio seção quem somos -->
-        <section>
-            <h2>Quem está construindo o MapaDev?</h2> <!--Título da section-->
+        <!--Inicio da section quem somos -->
+        <section id="quem-somos" class="py-5 bg-body-secondary">            
+            <h2 class="text-center fw-bold my-5">Quem está construindo o MapaDev?</h2>
             
-            <div class="quem-somos--cards-container">
-                <div class="quem-somos--cards-items"> <!--Card do Diego-->
-                    <img src="/images/diego.png" alt="">
-                    <h3>Diego Manoel</h3>
-                    <p>[Coloque aqui uma breve descrição sobre seus interesses principais em tecnologia, o que você busca aprender com este projeto e, talvez, suas principais habilidades ou focos de estudo atuais.]</p>
-    
-                    <button class="linkedin"><i class="fa-brands fa-linkedin"></i></button>
-                    <!--ícone do linkedin envolvido por um button que será dado uma função posteriormente a ele-->
-                    <button class="github"><i class="fa-brands fa-github"></i></button>
-                    <!--ícone do github envolvido por um button que será dado uma função posteriormente a ele-->
+            <div class="container mb-5"> <!-- Container principal -->
+                <div class="d-flex flex-wrap justify-content-center gap-5">    
+                    
+                    <!-- CARD DIEGO -->
+                    <article class="card text-center shadow-sm bg-white border-1" style="max-width: 20rem;"> 
+                        <img src="/images/diego.png" 
+                            class="card-img-top rounded-circle mx-auto mt-3" 
+                            alt="Diego Manoel" 
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title fw-bold h5">Diego Manoel</h3>
+                            <p class="card-text">Estudante do primeiro semestre de ADS pela Estácio e integrante do LTD (Laboratório de Transformação Digital), onde planejo e ministro monitorias assim como atuo como gestor no desenvolvimento de sistemas.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
+                                <a href="https://www.linkedin.com/in/diego-manoel/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-zoom">
+                                    <i class="bi bi-linkedin"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/diegommcosta" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-zoom">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD THIAGO -->
+                    <article class="card text-center shadow-sm bg-white border-1" style="max-width: 20rem;">
+                        <img src="/images/thiago.jpeg" 
+                            class="card-img-top rounded-circle mx-auto mt-3" 
+                            alt="Thiago De Angelis" 
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title fw-bold h5">Thiago De Angelis</h3>
+                            <p class="card-text">[Coloque aqui uma breve descrição sobre seus interesses principais em tecnologia, o que você busca aprender com este projeto e, talvez, suas principais habilidades ou focos de estudo atuais.]</p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
+                                <a href="https://www.linkedin.com/in/thiagodeangelis/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-zoom">
+                                    <i class="bi bi-linkedin"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/thiagodeangelis" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-zoom">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CARD LUAN -->
+                    <article class="card text-center shadow-sm bg-white border-1" style="max-width: 20rem;">
+                        <img src="/images/luan.jpeg" 
+                            class="card-img-top rounded-circle mx-auto mt-3" 
+                            alt="Luan Matheus" 
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title fw-bold h5">Luan Matheus</h3>
+                            <p class="card-text">[Coloque aqui uma breve descrição sobre seus interesses principais em tecnologia, o que você busca aprender com este projeto e, talvez, suas principais habilidades ou focos de estudo atuais.]</p>
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-zoom">
+                                    <i class="bi bi-linkedin"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/luan-810" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-zoom">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <!--Fim da div do card do Diego (As demais div's seguirão a mesma estrutura, por isso não haverá comentários)-->
-    
-                <!----------------------------------------------------------------------------------------------------------------------------------------->
-    
-                <div class="quem-somos--cards-items"> <!--Card do Thiago-->
-                    <img src="/images/thiago.jpeg" alt="">
-                    <h3>Thiago De Angelis</h3>
-                    <p>[Coloque aqui uma breve descrição sobre seus interesses principais em tecnologia, o que você busca aprender com este projeto e, talvez, suas principais habilidades ou focos de estudo atuais.]</p>
-                    <button class="linkedin"><i class="fa-brands fa-linkedin"></i></button>
-                    <button class="github"><i class="fa-brands fa-github"></i></button>
-                </div> <!--Fim card do Thiago-->
-                
-                <!----------------------------------------------------------------------------------------------------------------------------------------->
-    
-                <div class="quem-somos--cards-items"> <!--Card do Luan-->
-                    <img src="/images/luan.jpeg" alt="">
-                    <h3>Luan Matheus</h3>
-                    <p>[Coloque aqui uma breve descrição sobre seus interesses principais em tecnologia, o que você busca aprender com este projeto e, talvez, suas principais habilidades ou focos de estudo atuais.]</p>
-                    <button class="linkedin"><i class="fa-brands fa-linkedin"></i></button>
-                    <button class="github"><i class="fa-brands fa-github"></i></button>
-                </div><!-- Fim card do Luan-->
-            </div>
-            <!--Fim das divs de apresentação dos criadores -->
+            </div> <!--Fim do container principal -->
+            
+
+            <!-- Efeito hover nos botões -->
+            <style>
+                .btn-zoom {
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                }
+
+                .btn-zoom:hover {
+                transform: scale(1.08);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                }
+            </style>
         
         </section>
-        <!--Fim da section de apresentação dos criadores-->
+        <!--Fim da section quem somos-->
 
         <!----------------------------------------------------------------------------------------------------------------------------------------->
 
         <!--Início da section de apresentação do projeto-->
-        <section>
-            <h2>Conheça o MapaDev</h2>
-            <p>O MapaDev é um repositório de conteúdo pensado para <strong>organizar a jornada de estudos</strong> em <strong>desenvolvimento web</strong>. A ideia é simples: centralizar os tópicos essenciais em um único lugar, oferecendo um caminho lógico para quem quer aprender a programar para a web, desde a primeira linha de HTML até a complexidade da arquitetura em nuvem.
+        <section id="apresentacao" class="py-5">
+            
+            <div class="container my-5">
+                <div class="row align-items-center">
+      
+                    <h2 class="text-center fw-bold mb-4">Conheça o MapaDev</h2>
+                    <!-- Coluna do texto -->
+                    <div class="col-md-4 p-5">
+                        <p>
+                            O MapaDev é um repositório de conteúdo pensado para 
+                            <strong>organizar a jornada de estudos em desenvolvimento web</strong>. 
+                            <br>A ideia é simples: centralizar os tópicos essenciais em um único lugar, 
+                            oferecendo um caminho lógico para quem quer aprender a programar para a web, 
+                            <em>desde a primeira linha de HTML até a complexidade da arquitetura em nuvem</em>.
+                        </p>
+                        <p>
+                            Nosso objetivo é transformar um desafio de sala de aula em um 
+                            recurso valioso para a comunidade.
+                        </p>
+                    </div>
 
-            Nosso objetivo é transformar um desafio de sala de aula em um recurso valioso para a comunidade.</p>
-            <img src="" alt=""> <!--Imagem-->
+                    <!-- Coluna da imagem -->
+                    <div class="col-md-8 text-center">
+                        <img src="/images/mockup-notebook.png" 
+                        alt="Logo MapaDev" 
+                        class="img-fluid"
+                        style="max-width: 38rem;">
+                    </div>
+      
+                </div>
+            </div>
         </section> 
         <!--Fim da section de apresentação do projeto-->
 

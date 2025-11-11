@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
         this.innerHTML = `
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary py-2 px-sm-2 px-lg-5" style="background-color: #e3f2fd;" data-bs-theme="light">
+            <nav class="navbar navbar-expand-lg bg-secondary-subtle  py-2 px-sm-2 px-lg-5" style="background-color: #e3f2fd;" data-bs-theme="light">
                 <div class="container-fluid">
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
