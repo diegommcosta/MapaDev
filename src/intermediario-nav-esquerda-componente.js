@@ -5,19 +5,19 @@ class IntermediarioNavEsquerda extends HTMLElement {
             <h5 class="fw-bold mb-4">Tópicos</h5>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-typescript.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-typescript.html">TypeScript</a>
+                    <a class="nav-link ${caminhoAtual === "intermediario-bootstrap.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="intermediario-bootstrap.html">Bootstrap</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-arquitetura-software.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-arquitetura-software.html">Arquitetura de Software</a>
+                    <a class="nav-link ${caminhoAtual === "intermediario-react.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="intermediario-react.html">React</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-testes-automatizados.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-testes-automatizados.html">Testes Automatizados</a>
+                    <a class="nav-link ${caminhoAtual === "intermediario-node.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="intermediario-node.html">NodeJs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-docker.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-docker.html">Docker</a>
+                    <a class="nav-link ${caminhoAtual === "intermediario-api.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="intermediario-api.html">Api</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-cloud-computing.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-cloud-computing.html">Cloud Computing</a>
+                    <a class="nav-link ${caminhoAtual === "intermediario-sql.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="intermediario-sql.html">SQL</a>
                 </li>
             </ul>
         </div>

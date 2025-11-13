@@ -6,7 +6,13 @@ class Header extends HTMLElement {
             "iniciante.html"
         ];
         const intermediario = [
-            "intermediario.html"
+            "intermediario.html",
+            "intermediario-bootstrap.html",
+            "intermediario-react.html", 
+            "intermediario-node.html",  
+            "intermediario-api.html",
+            "intermediario-sql.html"
+
         ];
         const avancado = [
             "avancado.html", 
