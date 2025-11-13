@@ -5,6 +5,9 @@ class AvancadoNavEsquerda extends HTMLElement {
             <h5 class="fw-bold mb-4">Tópicos</h5>
             <ul class="nav flex-column">
                 <li class="nav-item">
+                    <a class="nav-link ${caminhoAtual === "avancado.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado.html">Avançado</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link ${caminhoAtual === "avancado-typescript.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-typescript.html">TypeScript</a>
                 </li>
                 <li class="nav-item">
