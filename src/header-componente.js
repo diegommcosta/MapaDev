@@ -6,7 +6,13 @@ class Header extends HTMLElement {
             "iniciante.html"
         ];
         const intermediario = [
-            "intermediario.html"
+            "intermediario.html",
+            "intermediario-bootstrap.html",
+            "intermediario-react.html", 
+            "intermediario-node.html",  
+            "intermediario-api.html",
+            "intermediario-sql.html"
+
         ];
         const avancado = [
             "avancado.html", 
@@ -17,18 +23,20 @@ class Header extends HTMLElement {
             "avancado-cloud-computing.html"
         ];
 
+         //data-bs-theme="light" estava travando o tema no "light"
+         //troquei a class="logo-light" por class="logo-img" para trocar a logo caso tema 'dark'
         this.innerHTML = `
         <header>
-            <nav class="navbar navbar-expand-lg bg-secondary-subtle  py-2 px-sm-2 px-lg-5" style="background-color: #e3f2fd;" data-bs-theme="light">
+            <nav class="navbar navbar-expand-lg bg-secondary-subtle  py-2 px-sm-2 px-lg-5" style="background-color: #e3f2fd;" >
                 <div class="container-fluid">
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-
+                                  
                     <a class="navbar-brand mx-auto me-lg-auto ms-lg-0" href="index.html">
-                        <img src="/images/mapadev-logo-light.svg" alt="MapaDev" height="40" class="logo-light">
+                        <img src="/images/mapadev-logo-light.svg" alt="MapaDev" height="40" class="logo-img"> 
                     </a>
 
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopics" aria-controls="offcanvasTopics">
@@ -57,8 +65,9 @@ class Header extends HTMLElement {
                             </button>
                         </form>
                         
-                        <button type="button" class="btn btn-info rounded-circle ms-lg-2 mt-2 mt-lg-0">
-                            <i class="bi bi-moon-fill "></i>
+                        
+                        <button id="theme-toggle" type="button" class="btn btn-info rounded-circle ms-lg-2 mt-2 mt-lg-0">
+                            <i class="theme-icon bi bi-moon-fill "></i>
                         </button>
                     </div>
                 </div>
@@ -66,5 +75,8 @@ class Header extends HTMLElement {
         </header> `;
     }     
 }
+
+//adicionando um id="theme-toggle" no botão de mudança de tema e o ícone theme-icon
+
 
 customElements.define('main-header', Header);
