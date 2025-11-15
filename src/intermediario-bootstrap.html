@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- Ícones bootstrap -->
-    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Ícones bootstrap -->
+    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script>
+    <!-- link para importar o pacote de icones -->
     <!--Componentes abaixo-->
     <script src="header-componente.js"></script> <!--Componente do Header-->
     <script src="footer-componente.js"></script> <!--Componente do Footer-->
+    <script src="theme.js"></script> <!--Componente da mudança de tema-->
     <script src="intermediario-nav-esquerda-componente.js"></script> <!--Componente do Nav da Esquerda-->
     <script src="nav-direita-componente.js"></script> <!--Componente do Nav da Direita-->
     <title>MapaDev Intermediário</title>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#nav-subtopics" data-bs-offset="80">
     <main-header></main-header> <!--Componente do Header-->
 
     <!----------------------------------------------------------------------------------------------------------------------------------------->
-        
+
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTopics" aria-labelledby="offcanvasTopicsLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasTopicsLabel">Tópicos</h5>
@@ -31,99 +39,131 @@
 
     <main class="container-fluid p-5"> <!--Container das Navs e do Conteúdo-->
         <div class="row g-5"> <!--Div para garantir a sequencia: Nav-Esquerda, Conteúdo, Nav-Direita-->
-            
-            <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->               
+
+            <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->
                 <intermediario-nav-esquerda></intermediario-nav-esquerda>
             </nav>
 
             <div class="col-lg-8"> <!--Inicio do conteúdo-->
                 <section id="bootstrap">
                     <h2 class="fw-bold mb-3">Bootstrap</h2>
-                    
+
                     <div class="bg-secondary-subtle rounded-4 p-4"> <!--Seções de conteúdos-->
-                        
+
                         <section id="videos">
                             <h3 class="fw-bold">Vídeos</h3>
 
                             <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Português</h4>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Live completa do professor Rodolfo Mori cobrindo Bootstrap do básico ao mais avançado, com exemplos práticos.</p>
-                                <a href="https://www.youtube.com/watch?v=n_nSfDoFN8E" target="_blank" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Live completa do professor Rodolfo Mori cobrindo Bootstrap do básico ao
+                                    mais avançado, com exemplos práticos.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal1">
                                     <i class="fa-brands fa-youtube me-2"></i>
-                                    Curso de BOOTSTRAP | Tornando-se um Programador na Prática - DevClub 
+                                    Curso de BOOTSTRAP | Tornando-se um Programador na Prática - DevClub
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Série de 32 vídeos do zero ao avançado em Bootstrap em português de Portugal
-                                        ministrado pelo professor João Ribeiro</p>
-                                <a href="https://www.youtube.com/watch?v=2c-EFQFyv4Y&list=PLXik_5Br-zO-iwhAe12sirOo_LZ0t-qEm"
-                                        target="_blank" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Um guia prático de 16 vídeos do zero ao avançado em Bootstrap 5 </p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal2">
+
                                     <i class="fa-brands fa-youtube me-2"></i>
-                                    Bootstrap 5 (Curso Fundamental ) - João Ribeiro
+                                    Crie Sites Responsivos do Zero com Bootstrap 5 Completo e Atualizado (2025)
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Matheus Battisti ensina na prática como usar Bootstrap criando um projeto do zero.</p>
-                                <a href="https://www.youtube.com/watch?v=jJUpJA1GJHw" target="_blank" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Matheus Battisti ensina na prática como usar Bootstrap criando um
+                                    projeto do zero.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal3">
                                     <i class="fa-brands fa-youtube me-2"></i>
                                     Aprenda Bootstrap 5 criando um projeto — Matheus Battisti (Hora de Codar)
                                 </a>
                             </div>
 
+
                             <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Inglês</h4>
 
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso completo focado em aprender Bootstrap desde o início, cobrindo componentes, grid, utilitários etc.</p>
-                                <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" target="_blank" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Curso completo focado em aprender Bootstrap desde o início, cobrindo
+                                    componentes, grid, utilitários etc.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal4">
                                     <i class="fa-brands fa-youtube me-2"></i>
                                     Bootstrap CSS Framework - Full Course for Beginners - freeCodeCamp.org
                                 </a>
                             </div>
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso rápido e direto ensinando o básico do Bootstrap 5 — instalação, sistema de grid, containers, tipografia e componentes essenciais. Ideal para quem quer entender o framework em poucas horas.</p>
-                                <a href="https://www.youtube.com/watch?v=Jyvffr3aCp0" target="_blank" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Curso rápido e direto ensinando o básico do Bootstrap 5 — instalação,
+                                    sistema de grid, containers, tipografia e componentes essenciais. Ideal para quem
+                                    quer entender o framework em poucas horas.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal5">
                                     <i class="fa-brands fa-youtube me-2"></i>
                                     Bootstrap 5 Crash Course – Web Dev Simplified
                                 </a>
                             </div>
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Playlist com várias aulas curtas, cobrindo do básico ao uso de componentes prontos como botões, modais e navegação. Ideal para aprender em etapas.</p>
-                                <a href="https://www.youtube.com/watch?v=bzZyCB5QT9I&list=PLp50dWW_m40WzAh2wY0a9iFYb0QlPzoxx" target="_blank" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Playlist com várias aulas curtas, cobrindo do básico ao uso de
+                                    componentes prontos como botões, modais e navegação. Ideal para aprender em etapas.
+                                </p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal6">
                                     <i class="fa-brands fa-youtube me-2"></i>
                                     Bootstrap 5 Tutorial For Beginners - ARCTutorials
                                 </a>
                             </div>
+
                         </section>
-                        
+
                         <hr class="my-4"> <!--Separador de seções-->
-                        
+
                         <section id="cursos">
                             <h3 class="fw-bold">Cursos, plataformas, playlists</h3>
 
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Domine Bootstrap 5 com uma coleção extensa de tutoriais, exemplos
+                                    práticos, explicações curtas e exercícios — tudo organizado em tópicos bem
+                                    estruturados.</p>
+                                <a href="https://www.geeksforgeeks.org/bootstrap/bootstrap-5/" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="fa-solid fa-layer-group me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
+                                    GeeksforGeeks – Bootstrap 5 Tutorial Series
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</O>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Aprenda Bootstrap construindo componentes e layouts reais, com uma
+                                    abordagem didática, exemplos claros e um guia completo para iniciantes.</p>
+                                <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="fa-solid fa-layer-group me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
+                                    Tutorial Republic – Bootstrap 5 Tutorial
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Plataforma interativa com desafios e lições práticas sobre tipagem avançada, inferência e padrões de projeto.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Explore cursos gratuitos de Bootstrap 5, perfeitos para aprender estilo,
+                                    personalização e boas práticas de design.</p>
+                                <a href="https://www.udemy.com/pt/topic/bootstrap/free/?srsltid=AfmBOor_7Z-KxFPSxWIFs0gi3A_RoJTQ0lb3Jip0lcC8vpgdBrrjI2-F"
+                                    target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="fa-solid fa-layer-group me-2"></i>
-                                    TypeScript Pro - Curso Interativo (Matt Pocock)
+                                    Cursos e tutoriais gratuitos de Bootstrap - Udemy
                                 </a>
                             </div>
                         </section>
@@ -134,84 +174,96 @@
                             <h3 class="fw-bold">Artigos, guias, tutoriais</h3>
 
                             <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Português</h4>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda o básico de TypeScript, entenda suas particularidades e suas semelhanças e diferenças para o JavaScript.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Aprenda os conceitos essenciais do Bootstrap, como grid, containers,
+                                    componentes e boas práticas, com uma explicação clara e acessível feita por
+                                    especialistas em ensino de tecnologia.</p>
+                                <a href="https://www.alura.com.br/artigos/bootstrap" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                                    Guia de Bootstrap para Iniciantes — Alura
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Entenda tudo sobre o superset de JavaScript que vêm ganhando muitos adeptos. Veja porque e como o TypeScript surgiu e algumas de suas características.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Um guia em português, direto ao ponto, para aprender os principais
+                                    conceitos do Bootstrap: grid, utilitários, componentes e layout responsivo.
+                                </p>
+                                <a href="https://bootstrapcss.com.br/guia-bootstrap/introducao" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    TypeScript // Dicionário do Programador — Código Fonte TV
+                                    Guia Bootstrap 5 – BootstrapCSS.com.br
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aborda tópicos avançados como interfaces extensíveis, inferência de tipos, e integração com Node.js e React.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Um guia rápido e bem organizado, em formato de livro online, para
+                                    iniciantes conhecerem os recursos mais importantes do Bootstrap 5.</p>
+                                <a href="https://diegomariano.com/livros/bootstrap-5-guia-rapido-para-iniciantes/"
+                                    target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    TypeScript na Prática (Avançado) — Rocketseat
+                                    Bootstrap 5 Guia Rápido para Iniciantes – Diego Mariano
                                 </a>
                             </div>
 
                             <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Inglês</h4>
 
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda sobre tipos condicionais, inferência de tipos e uso avançado de generics em projetos profissionais.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Estude Bootstrap de forma simples e prática com exemplos editáveis,
+                                    exercícios, snippets prontos e explicações diretas ao ponto, ideal para iniciantes.
+                                </p>
+                                <a href="https://www.w3schools.com/bootstrap5/" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Advanced TypeScript (Infer, Extends, Mapped Types) — Web Dev Simplified
+                                    W3Schools – Bootstrap 5 Tutorial
                                 </a>
                             </div>
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Série de desafios práticos com TypeScript para quem quer dominar o sistema de tipos de forma aplicada.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Série de desafios práticos com Bootstrap para quem quer dominar o
+                                    sistema de tipos de forma aplicada.</p>
+                                <a href="https://webdesign.tutsplus.com/this-is-bootstrap-5--CRS-201062c"
+                                    target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Total TypeScript — Advanced Challenges (Matt Pocock)
+                                    Total Bootstrap — Advanced Challenges (Matt Pocock)
                                 </a>
                             </div>
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Tutorial para aprender TypeScript, desde o nível iniciante.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Um guia completo que apresenta o Bootstrap de forma didática, explicando
+                                    grid, utilitários, components e como o framework melhora o fluxo de criação de
+                                    interfaces.</p>
+                                <a href="https://www.freecodecamp.org/news/full-bootstrap-5-tutorial-for-beginners/"
+                                    target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Learn TypeScript - Full Tutorial — freecodecamp.org
+                                    How to Use Bootstrap — freeCodeCamp
                                 </a>
                             </div>
                         </section>
 
                         <hr class="my-4"> <!--Separador de seções-->
-                        
+
                         <section id="doc">
                             <h3 class="fw-bold">Documentação</h3>
 
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">A fonte mais confiável e atualizada do framework, com todos os
+                                    componentes, utilitários, exemplos e guias oficiais diretamente da equipe do
+                                    Bootstrap.</p>
+                                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                                    target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
+                                    Bootstrap 5 — Official Documentation
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</O>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
-                                </a>
-                            </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Plataforma interativa com desafios e lições práticas sobre tipagem avançada, inferência e padrões de projeto.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    TypeScript Pro - Curso Interativo (Matt Pocock)
-                                </a>
-                            </div>
+
+
                         </section>
                     </div>
                 </section>
@@ -221,10 +273,147 @@
                 <nav-direita></nav-direita>
             </nav>
         </div>
+
+        <!--Modais abaixo-->
+        <!--Modais vídeo em pt-br-->
+        <!--PARA EQUIPE: alterar h5 para a página atual, se tiver menos vídeos, manter apenas a qnt de modais respectivos. Atualizar os iframes com os seus de cada vídeo-->
+        <div class="modal fade video-modal" id="videoModal1" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/n_nSfDoFN8E?si=VRjOxrE5vFC6FbQ1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal2" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/L_JgO4PjSw0?si=tWYqLUQR_ZZuvn1P"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal3" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/jJUpJA1GJHw?si=gB0xceH4Gd-KNang"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Modais vídeo em en-->
+        <div class="modal fade video-modal" id="videoModal4" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/-qfEOE4vtxE?si=aEt3r4JGW4CZ2C8q"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal5" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Jyvffr3aCp0?si=lvSDHpkzUf9EW0E0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal6" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/bzZyCB5QT9I?si=QrnnzycHtHuYRZ6-"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
     <!----------------------------------------------------------------------------------------------------------------------------------------->
-    
+
     <main-footer></main-footer> <!--Componente do Footer-->
 </body>
+
 </html>

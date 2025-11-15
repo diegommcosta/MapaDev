@@ -4,7 +4,10 @@ class IntermediarioNavEsquerda extends HTMLElement {
         <div class="sticky-top pt-3">
             <h5 class="fw-bold mb-4">Tópicos</h5>
             <ul class="nav flex-column">
-                <li class="nav-item">
+            <li class="nav-item">
+                    <a class="nav-link ${caminhoAtual === "intermediario.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="intermediario.html">Intermediário</a>
+                </li>    
+            <li class="nav-item">
                     <a class="nav-link ${caminhoAtual === "intermediario-bootstrap.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="intermediario-bootstrap.html">Bootstrap</a>
                 </li>
                 <li class="nav-item">
