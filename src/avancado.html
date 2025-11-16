@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- Ícones bootstrap -->
-    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script>
+    <!-- link para importar o pacote de icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Ícones bootstrap -->
     <!--Componentes abaixo-->
     <script src="header-componente.js"></script> <!--Componente do Header-->
+    <script src="theme.js"></script>
     <script src="footer-componente.js"></script> <!--Componente do Footer-->
     <script src="avancado-nav-esquerda-componente.js"></script> <!--Componente do Nav da Esquerda-->
     <script src="nav-direita-niveis.js"></script> <!--Componente do Nav da Direita-->
-    <script src="theme.js"></script> <!--Componente da mudança de tema-->
-    <title>MapaDev Avançado</title>
+    <title>MapaDev Avancado</title>
+
+    <!-- ========== CSS para Hover dos cards "Tópicos principais" ================ -->
+    <style>
+        .topic-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            cursor: pointer;
+            border-radius: .6rem;
+        }
+
+        .topic-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
+
+
 <body data-bs-spy="scroll" data-bs-target="#nav-subtopics" data-bs-offset="80">
     <main-header></main-header> <!--Componente do Header-->
 
     <!----------------------------------------------------------------------------------------------------------------------------------------->
-    <!--Só aparece no Mobile-->    
+    <!--Só aparece no Mobile-->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTopics" aria-labelledby="offcanvasTopicsLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasTopicsLabel">Tópicos</h5>
@@ -32,23 +54,243 @@
 
     <main class="container-fluid p-5"> <!--Container das Navs e do Conteúdo-->
         <div class="row g-5"> <!--Div para garantir a sequencia: Nav-Esquerda, Conteúdo, Nav-Direita-->
-            
-            <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->               
+
+            <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->
                 <avancado-nav-esquerda></avancado-nav-esquerda>
             </nav>
 
             <div class="col-lg-8"> <!--Inicio do conteúdo-->
-                
+
+
+
+
+                <!-- ======================================================== -->
+                <!-- HERO / APRESENTAÇÃO DO NÍVEL (CENTRALIZADO) -->
+                <!-- ======================================================== -->
+                <section class="text-center mb-5" >
+                    <h1 class="fw-bold display-5">Nível Avançado</h1> <!--Coloque o seu nível-->
+                    <p class="lead text-muted mx-auto" style="max-width: 45rem;">
+                        Eleve suas habilidades ao nível profissional, dominando conceitos que estruturam sistemas robustos, escaláveis e prontos para o mercado.
+                    </p>
+                </section>
+
+                <hr class="my-5">
+
+
+
+                <!-- ========================================================= -->
+                <!-- SOBRE ESTE NÍVEL  -->
+                <!-- ========================================================== -->
+                <section id="sobre" class="my-5 text-start"> <!--Id para nav direita (!)IMPORTANTE(!) procurem colocar os mesmos id's para linkar com nova nav direita-niveis-->
+                    <h2 class="fw-bold mb-3">Sobre este nível</h2>
+
+                    <p class="text-muted">
+                        No nível avançado do <strong><a 
+                            href="index.html"
+                            class="fw-semibold text-decoration-none link-body-emphasis">MapaDev</strong></a>, você entra na etapa que transforma desenvolvedores competentes em profissionais completos.
+                        Aqui, você aprenderá a projetar, organizar e manter aplicações modernas, utilizando padrões de arquitetura, ferramentas de alta eficiência e práticas adotadas por equipes experientes em empresas reais.
+                    </p>
+
+                    <p class="text-muted">
+                        Você estudará tecnologias que vão além da construção de páginas ou APIs, agora o foco está em garantir qualidade, escalabilidade, organização, previsibilidade e resiliência em projetos de qualquer tamanho.
+                    </p>
+
+                    <p class="text-muted">
+                        Os temas seguem o mesmo padrão de clareza e progressão que usamos na trilha <a
+                            href="iniciante.html"
+                            class="fw-semibold text-decoration-none link-body-emphasis">Iniciante</a>,
+                         e <a
+                            href="intermediario.html"
+                            class="fw-semibold text-decoration-none link-body-emphasis">Intermediário</a>,
+                        mas agora te preparando para atuar em times profissionais, participar de projetos complexos ou buscar oportunidades mais avançadas no mercado.
+                    </p>
+                </section>
+
+                <hr class="my-5">
+
+
+
+                <!-- ============================ -->
+                <!-- TÓPICOS PRINCIPAIS (ESQUERDA) -->
+                <!-- ============================ -->
+                <section class="my-5 text-start" id="topicos-principais"> <!--Id para nav direita-->
+                    <h2 class="fw-bold mb-4">Tópicos Principais</h2>
+                    <!--Escolha 4 tópicos (!)principais(!) do seu nível e like-os no <a> -->
+
+                    <div class="row g-4">
+
+                        <!-- Card Tópico 1 -->
+                        <div class="col-md-6">
+                            <a href="intermediario-bootstrap.html" class="text-decoration-none text-dark">
+                                <div class="card h-100 p-3 shadow-sm topic-card">
+                                    <h3 class="h5 fw-bold d-flex align-items-center gap-2">
+                                        <i class="bi bi-box-seam"></i> TypeScript
+                                    </h3>
+                                    <p class="text-muted mb-0">
+                                        Superset do JavaScript que adiciona tipagem estática, trazendo mais segurança, previsibilidade e robustez no desenvolvimento de aplicações modernas.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Card Tópico 2 -->
+                        <div class="col-md-6">
+                            <a href="intermediario-react.html" class="text-decoration-none text-dark">
+                                <div class="card h-100 p-3 shadow-sm topic-card">
+                                    <h3 class="h5 fw-bold d-flex align-items-center gap-2">
+                                        <i class="bi bi-lightning-charge"></i> Arquitetura de Software
+                                    </h3>
+                                    <p class="text-muted mb-0">
+                                        Conjunto de princípios, padrões e boas práticas para estruturar sistemas organizados, escaláveis e fáceis de manter. Inclui MVC, Clean Architecture, Domain-Driven Design e organização modular.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Card Card Tópico 3 -->
+                        <div class="col-md-6">
+                            <a href="intermediario-node.html" class="text-decoration-none text-dark">
+                                <div class="card h-100 p-3 shadow-sm topic-card">
+                                    <h3 class="h5 fw-bold d-flex align-items-center gap-2">
+                                        <i class="bi bi-terminal"></i> Testes Automatizados
+                                    </h3>
+                                    <p class="text-muted mb-0">
+                                        Ferramentas e técnicas para garantir que sua aplicação funcione como esperado. Abrange testes unitários, de integração, end-to-end e pipelines de qualidade (CI/CD).
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Card Tópico 4 -->
+                        <div class="col-md-6">
+                            <a href="intermediario-sql.html" class="text-decoration-none text-dark">
+                                <div class="card h-100 p-3 shadow-sm topic-card">
+                                    <h3 class="h5 fw-bold d-flex align-items-center gap-2">
+                                        <i class="bi bi-database"></i> Docker
+                                    </h3>
+                                    <p class="text-muted mb-0">
+                                        Plataforma para criar ambientes isolados, facilitando a padronização do desenvolvimento, a distribuição de aplicações e a automação de deploys.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <hr class="my-5">
+
+                <!-- ============================ -->
+                <!-- RECURSOS DISPONÍVEIS -->
+                <!-- ============================ -->
+                <section class="my-5" id="recursos-disponiveis">  <!--Id para nav direita-->
+                    <h2 class="fw-bold mb-4">Recursos Disponíveis</h2>
+
+                    <div class="mx-auto" style="max-width: 50rem;"> <!--Limita largura para leitura agradável-->
+
+                        <!-- Vídeos -->
+                        <div class="mb-4">
+                            <h3 class="h5 fw-bold d-flex align-items-center gap-2">
+                                <i class="bi bi-camera-video"></i> Vídeos
+                            </h3>
+                            <p class="text-muted">
+                                Videoaulas práticas com explicações objetivas, demonstrações reais de código
+                                e passo a passo visual. Ideal para aprender vendo cada etapa da construção de projetos.
+                            </p>
+                        </div>
+
+                        <!-- Cursos -->
+                        <div class="mb-4">
+                            <h3 class="h5 fw-bold d-flex align-items-center gap-2">
+                                <i class="bi bi-mortarboard"></i> Cursos, plataformas e playlists
+                            </h3>
+                            <p class="text-muted">
+                                Trilhas estruturadas que organizam o conteúdo do básico ao avançado, com exercícios,
+                                projetos guiados e certificações úteis para o portfólio.
+                            </p>
+                        </div>
+
+                        <!-- Artigos -->
+                        <div class="mb-4">
+                            <h3 class="h5 fw-bold d-flex align-items-center gap-2">
+                                <i class="bi bi-journal-text"></i> Artigos, guias e tutoriais
+                            </h3>
+                            <p class="text-muted">
+                                Conteúdos detalhados escritos por especialistas explicando conceitos específicos,
+                                técnicas importantes, comparações entre abordagens e boas práticas do dia a dia.
+                            </p>
+                        </div>
+
+                        <!-- Documentação -->
+                        <div class="mb-4">
+                            <h3 class="h5 fw-bold d-flex align-items-center gap-2">
+                                <i class="bi bi-file-earmark-code"></i> Documentação
+                            </h3>
+                            <p class="text-muted">
+                                A fonte oficial de cada tecnologia: sintaxe, APIs, exemplos testados e atualizações.
+                                Essencial para aprender direto da fonte e usar recursos da forma correta.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <hr class="my-5">
+
+                <!-- ============================ -->
+                <!-- PRÓXIMOS PASSOS (CENTRALIZADO) -->
+                <!-- ============================ -->
+                <section class="my-5 text-center" id="proximos-passos"> <!--Id para nav direita-->
+
+                    <div class="mx-auto bg-body-secondary border rounded p-4 p-md-5 shadow-sm"
+                        style="max-width: 50rem;">
+
+                        <h2 class="fw-bold mb-3">Próximos Passos</h2>
+
+                        <p class="text-muted mx-auto" style="max-width: 40rem;">
+                            Ao dominar este nível, você estará preparado para atuar como desenvolvedor pleno ou sênior, criando sistemas escaláveis, confiáveis e fáceis de manter. Os conhecimentos aqui servem de base para áreas mais especializadas, como arquitetura de soluções, DevOps, engenharia de nuvem e liderança técnica.
+                        </p>
+
+                        <div class="d-flex flex-column align-items-start gap-2 mt-4 mx-auto" style="max-width: 30rem;">
+
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                <span>Projetar aplicações robustas usando boas práticas de arquitetura</span>
+                            </div>
+
+                            <div class="d-flex align-items-left gap-2">
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                <span>Trabalhar com tipagem avançada e padrões modernos de desenvolvimento</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                <span>Containerizar e orquestrar aplicações com Docker</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                <span>Publicar e escalar projetos em plataformas de cloud computing</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
             </div>
 
             <nav class="col-2">
-                <nav-direita-niveis></nav-direita-niveis> <!--Componente do Nav da Direita-->
+                <nav-direita-niveis></nav-direita-niveis> <!--Componente da nova Nav Direita dos Niveis-->
             </nav>
         </div>
     </main>
 
     <!----------------------------------------------------------------------------------------------------------------------------------------->
-    
+
     <main-footer></main-footer> <!--Componente do Footer-->
 </body>
+
 </html>
