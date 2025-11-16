@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- Ícones bootstrap -->
-    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script> <!-- link para importar o pacote de icones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Ícones bootstrap -->
+    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script>
+    <!-- link para importar o pacote de icones -->
     <!--Componentes abaixo-->
     <script src="header-componente.js"></script> <!--Componente do Header-->
     <script src="footer-componente.js"></script> <!--Componente do Footer-->
+    <script src="theme.js"></script> <!--Componente da mudança de tema-->
     <script src="intermediario-nav-esquerda-componente.js"></script> <!--Componente do Nav da Esquerda-->
     <script src="nav-direita-componente.js"></script> <!--Componente do Nav da Direita-->
     <title>MapaDev Intermediário</title>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#nav-subtopics" data-bs-offset="80">
     <main-header></main-header> <!--Componente do Header-->
 
     <!----------------------------------------------------------------------------------------------------------------------------------------->
-        
+
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTopics" aria-labelledby="offcanvasTopicsLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasTopicsLabel">Tópicos</h5>
@@ -31,99 +39,115 @@
 
     <main class="container-fluid p-5"> <!--Container das Navs e do Conteúdo-->
         <div class="row g-5"> <!--Div para garantir a sequencia: Nav-Esquerda, Conteúdo, Nav-Direita-->
-            
-            <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->               
+
+            <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->
                 <intermediario-nav-esquerda></intermediario-nav-esquerda>
             </nav>
 
             <div class="col-lg-8"> <!--Inicio do conteúdo-->
                 <section id="react">
                     <h2 class="fw-bold mb-3">React</h2>
-                    
+
                     <div class="bg-secondary-subtle rounded-4 p-4"> <!--Seções de conteúdos-->
-                        
+
                         <section id="videos">
                             <h3 class="fw-bold">Vídeos</h3>
 
                             <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Português</h4>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Live completa do professor Rodolfo Mori cobrindo Bootstrap do básico ao mais avançado, com exemplos práticos.</p>
-                                <a href="https://www.youtube.com/watch?v=n_nSfDoFN8E" target="_blank" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Muito recomendado para quem nunca viu React, linguagem clara e direta. Aborda desde a instalação até um projeto prático.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal1">
                                     <i class="fa-brands fa-youtube me-2"></i>
-                                    Curso de BOOTSTRAP | Tornando-se um Programador na Prática - DevClub 
+                                    Curso de React JS para Iniciantes com Projeto - Matheus Battisti - Hora de Codar
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Série de 32 vídeos do zero ao avançado em Bootstrap em português de Portugal
-                                        ministrado pelo professor João Ribeiro</p>
-                                <a href="https://www.youtube.com/watch?v=2c-EFQFyv4Y&list=PLXik_5Br-zO-iwhAe12sirOo_LZ0t-qEm"
-                                        target="_blank" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">conceito de componentes, estados, renderização, criação do primeiro app React.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal2">
                                     <i class="fa-brands fa-youtube me-2"></i>
-                                    Bootstrap 5 (Curso Fundamental ) - João Ribeiro
+                                    Curso de React para Completos Iniciantes
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aborda tópicos avançados como interfaces extensíveis, inferência de tipos, e integração com Node.js e React.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Um vídeo muito direto e objetivo para quem nunca mexeu com React e quer ver resultados rápidos.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal3">
                                     <i class="fa-brands fa-youtube me-2"></i>
-                                    TypeScript na Prática (Avançado) — Rocketseat
+                                    Como sair do ZERO no React JS em APENAS UMA AULA - Hashtag Programação
                                 </a>
                             </div>
 
                             <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Inglês</h4>
 
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda sobre tipos condicionais, inferência de tipos e uso avançado de generics em projetos profissionais.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Curso de React que ensina tudo sobre React moderno usando componentes funcionais e hooks — ideal para começar do zero.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal4">
                                     <i class="fa-brands fa-youtube me-2"></i>
-                                    Advanced TypeScript (Infer, Extends, Mapped Types) — Web Dev Simplified
+                                    React Course - Beginner's Tutorial - freeCodeCamp.org
                                 </a>
                             </div>
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Série de desafios práticos com TypeScript para quem quer dominar o sistema de tipos de forma aplicada.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Curso gratuito para iniciantes em React com exemplos práticos, ideal para aprender o funcionamento da biblioteca e construir algo real.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal5">
                                     <i class="fa-brands fa-youtube me-2"></i>
-                                    Total TypeScript — Advanced Challenges (Matt Pocock)
+                                    React Full Course for free - Bro Code
                                 </a>
                             </div>
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Tutorial para aprender TypeScript, desde o nível iniciante.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Uma série de tutoriais agrupados como “capítulos de livro”, cobrindo React de forma completa, desde fundamentos até funcionalidades mais avançadas.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal6">
                                     <i class="fa-brands fa-youtube me-2"></i>
-                                    Learn TypeScript - Full Tutorial — freecodecamp.org
+                                    React JS Full Course for Beginners | Complete All-in-One Tutorial - Dave Gray
                                 </a>
                             </div>
                         </section>
-                        
+
                         <hr class="my-4"> <!--Separador de seções-->
-                        
+
                         <section id="cursos">
                             <h3 class="fw-bold">Cursos, plataformas, playlists</h3>
 
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Domine React de forma prática com uma coleção de exercícios interativos, explicações didáticas e fundamentos essenciais da biblioteca.</p>
+                                <a href="https://www.freecodecamp.org/learn/front-end-development-libraries/#react" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="fa-solid fa-layer-group me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
+                                    Learn React Basics — freeCodeCamp
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</O>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="fa-solid fa-layer-group me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
-                                </a>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Aprenda React praticando diretamente no navegador, com um curso gratuito altamente elogiado pela comunidade.</p>
+                                    <a href="https://scrimba.com/learn-react-c0e"
+                                        class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium" target="_blank">
+                                        <i class="fa-solid fa-layer-group me-2"></i>
+                                        Scrimba — Learn React for Free
+                                    </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Plataforma interativa com desafios e lições práticas sobre tipagem avançada, inferência e padrões de projeto.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Aprenda React com um dos melhores cursos gratuitos do Brasil, com exemplos práticos, exercícios e explicações profissionais.</p>
+                                <a href="https://www.origamid.com/curso/react/" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="fa-solid fa-layer-group me-2"></i>
-                                    TypeScript Pro - Curso Interativo (Matt Pocock)
+                                    Curso React Completo — Origamid
                                 </a>
                             </div>
                         </section>
@@ -134,84 +158,72 @@
                             <h3 class="fw-bold">Artigos, guias, tutoriais</h3>
 
                             <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Português</h4>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda o básico de TypeScript, entenda suas particularidades e suas semelhanças e diferenças para o JavaScript.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Um tutorial oficial, em português, que te guia do “Olá React” aos conceitos de componentes, props e state — ideal para quem está começando.</p>
+                                <a href="https://pt-br.react.dev/blog/2023/03/16/introducing-react-dev" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Tutorial para INICIANTES: aprenda sobre TYPESCRIPT em 16 minutos — Alura
+                                   Tutorial: Introdução ao React - react.dev
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Entenda tudo sobre o superset de JavaScript que vêm ganhando muitos adeptos. Veja porque e como o TypeScript surgiu e algumas de suas características.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Artigo em português que explica de forma clara o que é React, seus recursos principais (JSX, Virtual DOM, componentes) e como dar os primeiros passos.
+                                </p>
+                                <a href="https://www.hostinger.com/br/tutoriais/o-que-e-react-javascript" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    TypeScript // Dicionário do Programador — Código Fonte TV
+                                    React descomplicado: o que é e como começar já! — Hostinger
                                 </a>
                             </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aborda tópicos avançados como interfaces extensíveis, inferência de tipos, e integração com Node.js e React.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    TypeScript na Prática (Avançado) — Rocketseat
-                                </a>
-                            </div>
+
 
                             <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Inglês</h4>
 
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Aprenda sobre tipos condicionais, inferência de tipos e uso avançado de generics em projetos profissionais.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Coleção prática com tutoriais curtos para aprender desde JSX, props, hooks até padrões avançados de React.</p>
+                                <a href="https://www.geeksforgeeks.org/reactjs/react/" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Advanced TypeScript (Infer, Extends, Mapped Types) — Web Dev Simplified
+                                    React Tutorials — GeeksforGeeks
                                 </a>
                             </div>
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Série de desafios práticos com TypeScript para quem quer dominar o sistema de tipos de forma aplicada.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Tutoriais curtos, diretos e práticos para quem quer aprender React começando pelos fundamentos.</p>
+                                <a href="https://www.w3schools.com/react/" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Total TypeScript — Advanced Challenges (Matt Pocock)
-                                </a>
-                            </div>
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Tutorial para aprender TypeScript, desde o nível iniciante.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                                    Learn TypeScript - Full Tutorial — freecodecamp.org
+                                    React Tutorial — W3Schools
                                 </a>
                             </div>
                         </section>
 
                         <hr class="my-4"> <!--Separador de seções-->
-                        
+
                         <section id="doc">
                             <h3 class="fw-bold">Documentação</h3>
 
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">A documentação da Mozilla oferece explicações sólidas sobre conceitos fundamentais utilizados no React, como SPA, DOM e componentes.</p>
+                                <a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Frameworks_libraries/React_getting_started" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
                                     <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
+                                    React Concepts — MDN
                                 </a>
                             </div>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">A nova documentação oficial do React, com foco em aprendizado moderno, exemplos reais e explicações claras sobre hooks e componentes.</p>
+                                    <a href="https://react.dev/learn" target="_blank"
+                                        class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
+                                        <i class="bi bi-file-earmark-text-fill me-2"></i>
+                                        React.dev — Official Documentation
+                                    </a>
+                            </div>
+
                             
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Curso gratuito com seções dedicadas a tópicos avançados como tipos mapeados, condicionais e decoradores.</O>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    Learn TypeScript — Curso gratuito (Learn-TS.org)
-                                </a>
-                            </div>
-                            
-                            <div class="conteudo-card bg-white p-3 rounded-3 shadow-sm mb-3">
-                                <p class="mb-2">Plataforma interativa com desafios e lições práticas sobre tipagem avançada, inferência e padrões de projeto.</p>
-                                <a href="#" class="d-inline-flex align-items-center bg-body-tertiary rounded-pill px-3 py-2 text-decoration-none text-dark fw-medium">
-                                    <i class="bi bi-file-earmark-text-fill me-2"></i>
-                                    TypeScript Pro - Curso Interativo (Matt Pocock)
-                                </a>
-                            </div>
                         </section>
                     </div>
                 </section>
@@ -221,10 +233,118 @@
                 <nav-direita></nav-direita>
             </nav>
         </div>
+        <!--Modais abaixo-->
+        <!--Modais vídeo em pt-br-->
+        <!--PARA EQUIPE: alterar h5 para a página atual, se tiver menos vídeos, manter apenas a qnt de modais respectivos. Atualizar os iframes com os seus de cada vídeo-->
+
+        <div class="modal fade video-modal" id="videoModal1" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">React</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ERflhpiMc1o?si=NVDBToX1cbNuKEvT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal2" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">React</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2RWsLmu8yVc?si=pjWa6glPYJtOfG0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal3" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">React</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5XzZI5PtCi8?si=LDb0UIOI37JqSzaD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Modais vídeo em en-->
+        <div class="modal fade video-modal" id="videoModal4" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">React</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bMknfKXIFA8?si=nNo_49dDdQRcD69V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal5" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">React</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/CgkZ7MvWUAA?si=lZxrLQxtMJFVdvHN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal6" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">React</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RVFAyFWO4go?si=qUwmT9V9bVO5hfC9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
     </main>
 
     <!----------------------------------------------------------------------------------------------------------------------------------------->
-    
+
     <main-footer></main-footer> <!--Componente do Footer-->
 </body>
+
 </html>
