@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- LOGO ---
-    const base = dentroDeSrc ? "../" : "";
+    const dentroSrc = window.location.pathname.includes("/src/");
+    const base = dentroSrc ? "../" : "";
     if (logo) {
       if (current === "dark") {
         logo.src = `${base}images/mapadev-logo-dark.svg`;
