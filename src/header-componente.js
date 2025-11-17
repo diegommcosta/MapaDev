@@ -32,9 +32,9 @@ class Header extends HTMLElement {
         let intermediarioLink = ""
         let avancadoLink = ""
         if(caminhoAtual === "index.html"){
-            inicianteLink = '"href="/src/iniciante.html"'
-            intermediarioLink = '"href="/src/intermediario.html"'
-            avancadoLink = '"href="/src/avancado.html"'
+            inicianteLink = '"href="src/iniciante.html"'
+            intermediarioLink = '"href="src/intermediario.html"'
+            avancadoLink = '"href="src/avancado.html"'
         }else {
             inicianteLink = '"href="iniciante.html"'
             intermediarioLink = '"href="intermediario.html"'
@@ -53,7 +53,7 @@ class Header extends HTMLElement {
                     <span class="navbar-toggler-icon"></span>
                     </button>
                                   
-                    <a class="navbar-brand mx-auto me-lg-auto ms-lg-0" href="/index.html">
+                    <a class="navbar-brand mx-auto me-lg-auto ms-lg-0" href="index.html">
                         <img src="/images/mapadev-logo-light.svg" alt="MapaDev" height="40" class="logo-img"> 
                     </a>
 
