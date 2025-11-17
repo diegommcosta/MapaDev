@@ -20,6 +20,7 @@ O site está organizado nas seguintes seções:
 
 ## 💻 Tecnologias Utilizadas
 
-* **Frontend:** HTML, CSS, React, Next.js...
-* **Backend:** Node.js, Express...
+* **Frontend:** HTML, CSS, Bootstrap;
+* **Backend:** JavaScript;
 * **Hospedagem:** GitHub Pages
+
