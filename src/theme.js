@@ -28,9 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- LOGO ---
     if (logo) {
       if (current === "dark") {
-        logo.src = "images/mapadev-logo-dark.svg";
+        if(dentroDeSrc){
+          logo.src = "../images/mapadev-logo-dark.svg";
+        } else {
+          logo.src = "images/mapadev-logo-dark.svg";
+        }
       } else {
-        logo.src = "images/mapadev-logo-light.svg";
+        if(dentroDeSrc){
+          logo.src = "../images/mapadev-logo-light.svg";
+        } else {
+          logo.src = "images/mapadev-logo-light.svg";
+        }
       }
     }
   }
