@@ -26,19 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- LOGO ---
+    const base = dentroDeSrc ? "../" : "";
     if (logo) {
       if (current === "dark") {
-        if(dentroDeSrc){
-          logo.src = "../images/mapadev-logo-dark.svg";
-        } else {
-          logo.src = "images/mapadev-logo-dark.svg";
-        }
+        logo.src = `${base}images/mapadev-logo-dark.svg`;
       } else {
-        if(dentroDeSrc){
-          logo.src = "../images/mapadev-logo-light.svg";
-        } else {
-          logo.src = "images/mapadev-logo-light.svg";
-        }
+        logo.src = `${base}images/mapadev-logo-light.svg`;
       }
     }
   }
