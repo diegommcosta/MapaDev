@@ -3,7 +3,12 @@ const caminhoAtual = window.location.pathname.split("/").pop(); //Seleciona o ca
 class Header extends HTMLElement {
     connectedCallback(){
         const iniciante = [
-            "iniciante.html"
+            "iniciante.html",
+            "iniciante-logica-programacao.html",
+            "iniciante-html.html",
+            "iniciante-css.html",
+            "iniciante-javascript.html",
+            "iniciante-git-github.html"
         ];
         const intermediario = [
             "intermediario.html",
