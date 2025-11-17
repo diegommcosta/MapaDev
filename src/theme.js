@@ -26,11 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- LOGO ---
+    const partes = window.location.pathname.split("/");
+    const arquivoAtual = partes[partes.length - 2];
+    const base = arquivoAtual === "src" ? "../" : "";
     if (logo) {
       if (current === "dark") {
-        logo.src = "images/mapadev-logo-dark.svg";
+        logo.src = `${base}images/mapadev-logo-dark.svg`;
       } else {
-        logo.src = "images/mapadev-logo-light.svg";
+        logo.src = `${base}images/mapadev-logo-light.svg`;
       }
     }
   }

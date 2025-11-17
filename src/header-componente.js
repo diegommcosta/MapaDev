@@ -1,4 +1,8 @@
-const caminhoAtual = window.location.pathname.split("/").pop(); //Seleciona o caminho atual.
+const partes = window.location.pathname.split("/"); 
+const caminhoAtual = partes.pop(); //Seleciona o caminho atual.
+const pastaAtual = partes.pop(); //Seleciona o caminho atual.
+
+const dentroDeSrc = pastaAtual === "src"; //Informa se está no src
 
 class Header extends HTMLElement {
     connectedCallback(){        
@@ -28,18 +32,7 @@ class Header extends HTMLElement {
             "avancado-cloud-computing.html"
         ];
 
-        let inicianteLink = ""
-        let intermediarioLink = ""
-        let avancadoLink = ""
-        if(caminhoAtual === "index.html"){
-            inicianteLink = '"href="src/iniciante.html"'
-            intermediarioLink = '"href="src/intermediario.html"'
-            avancadoLink = '"href="src/avancado.html"'
-        }else {
-            inicianteLink = '"href="iniciante.html"'
-            intermediarioLink = '"href="intermediario.html"'
-            avancadoLink = '"href="avancado.html"'
-        }
+        const base = dentroDeSrc ? "../" : "";
 
          //data-bs-theme="light" estava travando o tema no "light"
          //troquei a class="logo-light" por class="logo-img" para trocar a logo caso tema 'dark'
@@ -53,8 +46,8 @@ class Header extends HTMLElement {
                     <span class="navbar-toggler-icon"></span>
                     </button>
                                   
-                    <a class="navbar-brand mx-auto me-lg-auto ms-lg-0" href="index.html">
-                        <img src="/images/mapadev-logo-light.svg" alt="MapaDev" height="40" class="logo-img"> 
+                    <a class="navbar-brand mx-auto me-lg-auto ms-lg-0" href="${base}index.html">
+                        <img src="${base}images/mapadev-logo-light.svg" alt="MapaDev" height="40" class="logo-img"> 
                     </a>
 
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopics" aria-controls="offcanvasTopics">
@@ -64,13 +57,16 @@ class Header extends HTMLElement {
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline justify-content-center">
                             <li class="nav-item">
-                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""}${inicianteLink}>Iniciante</a>
+                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""}"
+                                href="${base}src/iniciante.html">Iniciante</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""}${intermediarioLink}>Intermediário</a>
+                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""}"
+                                href="${base}src/intermediario.html">Intermediário</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""}${avancadoLink}>Avançado</a>
+                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""}"
+                                href="${base}src/avancado.html">Avançado</a>
                             </li>
                         </ul>                       
                         
