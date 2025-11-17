@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Ícones bootstrap -->
+    <script src="https://kit.fontawesome.com/82236e1497.js" crossorigin="anonymous"></script>
+    <!-- link para importar o pacote de icones -->
+    <!--Componentes abaixo-->
+    <script src="header-componente.js"></script> <!--Componente do Header-->
+    <script src="footer-componente.js"></script> <!--Componente do Footer-->
+    <script src="theme.js"></script> <!--Componente da mudança de tema-->
+    <script src="iniciante-nav-esquerda-componente.js"></script> <!--Componente do Nav da Esquerda-->
+    <script src="nav-direita-componente.js"></script> <!--Componente do Nav da Direita-->
+    <title>MapaDev Iniciantes</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-subtopics" data-bs-offset="80">
+    <main-header></main-header> <!--Componente do Header-->
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTopics" aria-labelledby="offcanvasTopicsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopicsLabel">Tópicos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <iniciante-nav-esquerda></iniciante-nav-esquerda>
+        </div>
+    </div>
+
+    <main class="container-fluid p-5"> <!--Container das Navs e do Conteúdo-->
+        <div class="row g-5"> <!--Div para garantir a sequencia: Nav-Esquerda, Conteúdo, Nav-Direita-->
+
+            <nav class="col-2 d-none d-lg-block"> <!--Nav esquerda chamando componente do nav-esquerda-->
+                <iniciante-nav-esquerda></iniciante-nav-esquerda>
+            </nav>
+
+            <div class="col-lg-8"> <!--Inicio do conteúdo-->
+                <section id="bootstrap">
+                    <h2 class="fw-bold mb-3">JavaScript</h2>
+
+                    <div class="bg-secondary-subtle rounded-4 p-4"> <!--Seções de conteúdos-->
+
+                        <section id="videos">
+                            <h3 class="fw-bold">Vídeos</h3>
+
+                            <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Português</h4>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Curso em Vídeo de JavaScript e ECMAScript para Iniciantes</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                    <i class="fa-brands fa-youtube me-2"></i>
+                                    Curso de JavaScript – Curso em Vídeo (Gustavo Guanabara) 
+
+                                </a>
+                            </div>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Esse curso javascript iniciante é tanto para pessoas que nunca programaram antes e este curso de javascript completo gratis foi criado para você, que já sabe outra linguagem.</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal2">
+
+                                    <i class="fa-brands fa-youtube me-2"></i>
+                                    JavaScript para Iniciantes – Dev Aprender
+                                </a>
+                            </div>                
+
+
+                            <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Inglês</h4>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Primeiros Passos de JavaScript em ingles</p>
+                                <a href="#"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium"
+                                    data-bs-toggle="modal" data-bs-target="#videoModal4">
+                                    <i class="fa-brands fa-youtube me-2"></i>
+                                    JavaScript Full Course – FreeCodeCamp (inglês)
+
+                                </a>
+                            </div>
+                           
+
+                        </section>
+
+                        <hr class="my-4"> <!--Separador de seções-->
+
+                        <section id="cursos">
+                            <h3 class="fw-bold">Cursos, plataformas, playlists</h3>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Nesta unidade, aprenderemos a usar a linguagem de programação JavaScript e a biblioteca JavaScript Processing para fazer nossos próprios desenhos e animações.</p>
+                                <a href="https://pt.khanacademy.org/computing/computer-programming/programming?utm_source=chatgpt.com" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
+                                    <i class="fa-solid fa-layer-group me-2"></i>
+                                    Introdução ao JavaScript - khanacademy
+                                </a>
+                            </div>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Plataforma de Estudo em javascript em ingles</p>
+                                <a href="https://www.w3schools.com/js/" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
+                                    <i class="fa-solid fa-layer-group me-2"></i>
+                                    JavaScript Tutorial - W3schools
+
+                                </a>
+                            </div>
+
+                            
+                        </section>
+
+                        <hr class="my-4"> <!--Separador de seções-->
+
+                        <section id="artigos">
+                            <h3 class="fw-bold">Artigos, guias, tutoriais</h3>
+
+                            <h4 class="h5 fw-medium mt-4 mb-3">Conteúdos em Português</h4>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Shutterstock                                
+                                 Guia de JavaScript: o que é e como aprender a linguagem mais popular do mundo?
+                                </p>
+                                <a href="https://www.alura.com.br/artigos/javascript?srsltid=AfmBOorZF-ROH0fK2soUv1c2DpbcJJqv8-DUIa7KRwDWfpwrapUiDvIE" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
+                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
+                                    Guia Completo de JavaScript - Alura Blog
+                                </a>
+                            </div>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Guia de javascript em ingles
+                                </p>
+                                <a href="https://developer.mozilla.org/en-US/curriculum/core/javascript-fundamentals/" target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
+                                    <i class="bi bi-file-earmark-richtext-fill me-2"></i>
+                                    JavaScript Fudamentals - MDN
+                                </a>
+                            </div>
+
+                           
+                        </section>
+
+                        <hr class="my-4"> <!--Separador de seções-->
+
+                        <section id="doc">
+                            <h3 class="fw-bold">Documentação</h3>
+
+                            <div class="conteudo-card bg-body p-3 rounded-3 shadow-sm mb-3">
+                                <p class="mb-2">Documentaçao de javascript em ingles
+
+                                </p>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                    target="_blank"
+                                    class="d-inline-flex align-items-center bg-body-secondary rounded-pill px-3 py-2 text-decoration-none text-body fw-medium">
+                                    <i class="bi bi-file-earmark-text-fill me-2"></i>
+                                    JavaScript Docs - MDN Web Docs
+                                </a>
+                            </div>
+
+
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="col-2">
+                <nav-direita></nav-direita>
+            </nav>
+        </div>
+
+        <!--Modais abaixo-->
+        <!--Modais vídeo em pt-br-->
+        <!--PARA EQUIPE: alterar h5 para a página atual, se tiver menos vídeos, manter apenas a qnt de modais respectivos. Atualizar os iframes com os seus de cada vídeo-->
+        <div class="modal fade video-modal" id="videoModal1" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">JavaScript</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1-w1RfGIov4?si=N_1d1CkXEhbPt8Jv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal2" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">JavaScript</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/i6Oi-YtXnAU?si=31sUD9EGZiHWr-H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade video-modal" id="videoModal3" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">JavaScript</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg?si=6j99740QOEN0eWqR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </main>
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <main-footer></main-footer> <!--Componente do Footer-->
+</body>
+
+</html>

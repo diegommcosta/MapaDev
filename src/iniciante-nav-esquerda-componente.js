@@ -5,19 +5,22 @@ class InicianteNavEsquerda extends HTMLElement {
             <h5 class="fw-bold mb-4">Tópicos</h5>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-typescript.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-typescript.html">TypeScript</a>
+                    <a class="nav-link ${caminhoAtual === "iniciante.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante.html">Iniciante</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-arquitetura-software.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-arquitetura-software.html">Arquitetura de Software</a>
+                    <a class="nav-link ${caminhoAtual === "iniciante-logica-programacao.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante-logica-programacao.html">Logicade Programaçao</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-testes-automatizados.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-testes-automatizados.html">Testes Automatizados</a>
+                    <a class="nav-link ${caminhoAtual === "iniciante-html.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante-html.html">HTML</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-docker.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-docker.html">Docker</a>
+                    <a class="nav-link ${caminhoAtual === "iniciante-css.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante-css.html">CSS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "avancado-cloud-computing.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="avancado-cloud-computing.html">Cloud Computing</a>
+                    <a class="nav-link ${caminhoAtual === "iniciante-javascript.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante-javascript.html">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ${caminhoAtual === "iniciante-git-github.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante-git-github.html">Git/GitHub</a>
                 </li>
             </ul>
         </div>
