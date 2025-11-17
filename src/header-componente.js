@@ -61,13 +61,13 @@ class Header extends HTMLElement {
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline justify-content-center">
                             <li class="nav-item">
-                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""}${inicianteLink}>Iniciante</a>
+                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""} ${inicianteLink}>Iniciante</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""}${intermediarioLink}>Intermediário</a>
+                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""} ${intermediarioLink}>Intermediário</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""}${avancadoLink}>Avançado</a>
+                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""} ${avancadoLink}>Avançado</a>
                             </li>
                         </ul>                       
                         
