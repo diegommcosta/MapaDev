@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light"> <!--Definindo tema padrão como light-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- CSS bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script> <!-- JavaScript bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Ícones bootstrap -->
+
+  <!--Componentes abaixo-->
+  <script src="/src/header-componente.js" type="module"></script> <!--Componente do Header-->
+  <script src="/src/theme.js"></script> <!--Componente da mudança de tema-->
+  <script src="/src/footer-componente.js" type="module"></script> <!--Componente do Footer-->
+
+  <!-- Efeito hover nos botões + Efeito hover cards [Como usar o site?] -->
+  <style>
+    .btn-zoom {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-zoom:hover {
+      transform: scale(1.08);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    .topic-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      border-radius: .6rem;
+    }
+
+    .topic-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15);
+    }
+  </style>
+
+  <title>MapaDev</title>
+</head>
+
+<body>
+  <main-header></main-header> <!--Componente do Header-->
+
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+  <!--Início da parte principal do site-->
+  <main>
+    <!--Inicio da Section do Hero Banner-->
+    <section class="pt-5">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold mt-5 mx-auto lh-1" style="max-width: 25rem;">Bem-vindo ao MapaDev!</h1>
+
+        <p class="lead fw-normal mb-4 mx-auto p-3" style="max-width: 42rem;">
+          Seu guia definitivo para navegar no universo do <strong>desenvolvimento web</strong>,
+          desde os fundamentos até os tópicos mais avançados.
+        </p>
+
+        <img src="/images/img-herobanner.png" alt="Preview da seção Iniciante do MapaDev"
+          class="img-fluid mt-5 rounded-top-4 shadow-lg">
+      </div>
+    </section>
+    <!--Fim da section do Hero Banner-->
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Inicio da section quem somos -->
+    <section id="quem-somos" class="py-5 bg-body-secondary">
+      <h2 class="text-center fw-bold my-5">Quem está construindo o MapaDev?</h2>
+
+      <div class="container mb-5"> <!-- Container principal -->
+        <div class="d-flex flex-wrap justify-content-center gap-5">
+
+          <!-- CARD DIEGO -->
+          <!--tirei o  pois estava dando conflito no tema 'dark'-->
+
+          <article class="card text-center shadow-sm border-1" style="max-width: 20rem;">
+            <img src="/images/diego.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Diego Manoel"
+              style="width: 180px; height: 180px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title fw-bold h5">Diego Manoel</h3>
+              <p class="card-text">Estudante do primeiro semestre de ADS pela Estácio e integrante do LTD (Laboratório
+                de Transformação Digital), onde planejo e ministro monitorias assim como atuo como gestor no
+                desenvolvimento de sistemas.</p>
+              <div class="d-flex justify-content-center gap-2 mt-auto">
+                <a href="https://www.linkedin.com/in/diego-manoel/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-zoom">
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/diegommcosta" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-dark btn-zoom">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD THIAGO -->
+          <article class="card text-center shadow-sm  border-1" style="max-width: 20rem;">
+            <img src="/images/thiago.jpeg" class="card-img-top rounded-circle mx-auto mt-3" alt="Thiago De Angelis"
+              style="width: 180px; height: 180px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title fw-bold h5">Thiago De Angelis</h3>
+              <p class="card-text">Estudante de ADS pela Estácio e integrante do LTD (Laboratório de Transformação
+                Digital), onde realizo monitorias em minicursos e atuo como desenvolvedor de sistemas e resolução de
+                problemas digitais.</p>
+              <div class="d-flex justify-content-center gap-2 mt-auto">
+                <a href="https://www.linkedin.com/in/thiagodeangelis/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-zoom">
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/thiagodeangelis" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-dark btn-zoom">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD LUAN -->
+          <article class="card text-center shadow-sm  border-1" style="max-width: 20rem;">
+            <img src="/images/luan.jpeg" class="card-img-top rounded-circle mx-auto mt-3" alt="Luan Matheus"
+              style="width: 180px; height: 180px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title fw-bold h5">Luan Matheus</h3>
+              <p class="card-text">Estudante de ADS pela Estácio, apaixonado por tecnologia e em formação para atuar no desenvolvimento de sistemas. Estou construindo e aprimorando habilidades em tecnologia da informação.</p>
+              <div class="d-flex justify-content-center gap-2 mt-auto">
+                <a href="https://www.linkedin.com/in/luan-matheus-b4829234b/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-zoom">
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/luan-810" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-dark btn-zoom">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div> <!--Fim do container principal -->
+
+
+
+
+    </section>
+    <!--Fim da section quem somos-->
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Início da section de apresentação do projeto-->
+    <section id="apresentacao" class="py-5">
+
+      <div class="container my-5">
+        <div class="row align-items-center">
+
+          <h2 class="text-center fw-bold mb-4">Conheça o MapaDev</h2>
+          <!-- Coluna do texto -->
+          <div class="col-md-4 p-5">
+            <p>
+              O MapaDev é um repositório de conteúdo pensado para
+              <strong>organizar a jornada de estudos em desenvolvimento web</strong>.
+              <br>A ideia é simples: centralizar os tópicos essenciais em um único lugar,
+              oferecendo um caminho lógico para quem quer aprender a programar para a web,
+              <em>desde a primeira linha de HTML até a complexidade da arquitetura em nuvem</em>.
+            </p>
+            <p>
+              Nosso objetivo é transformar um desafio de sala de aula em um
+              recurso valioso para a comunidade.
+            </p>
+          </div>
+
+          <!-- Coluna da imagem -->
+          <div class="col-md-8 text-center">
+            <img src="/images/img-notebook.png" alt="Logo MapaDev" class="img-fluid w-75" style="max-width: 38rem;">
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--Fim da section de apresentação do projeto-->
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!--Inicio da section das intruções do site-->
+    <section class="bg-secondary-subtle py-5" id="instruções">
+      <div class="text-center pb-4 ">
+        <h2>Como usar o site?</h2>
+        <p>Navegar pelo MapaDev é intuitivo. Organizamos todo o conteúdo em três grandes trilhas de conhecimento.</p>
+      </div>
+
+      <div class="container mt-4"> <!--Centraliza e adiciona padding horizontal ao conteúdo da página.-->
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 "> <!--breakpoint médio (md), 3 colunas por linha + gap-->
+          <!-- Card 1 -->
+          <div class="col col-md-4 ">
+            <a href="iniciante.html" class="text-decoration-none text-dark">
+              <div class="card h-100 text-center topic-card"> <!--tamanho dos cartões iguais-->
+                <img src="../images/1-iniciante.jpg" class="card-img-top" alt="Descrição da Imagem 1">
+                <div class="card-body">
+                  <h5 class="card-title">Iniciante</h5>
+                  <p class="card-text">Comece sua jornada no mapa do desenvolvimento web. Descubra os primeiros marcos
+                    com HTML, CSS e lógica básica, e prepare o terreno para conquistar novos horizontes.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col col-md-4">
+            <a href="intermediario.html" class="text-decoration-none text-dark">
+              <div class="card h-100 text-center topic-card">
+                <img src="../images/2-intermediario.jpg" class="card-img-top" alt="Descrição da Imagem 2">
+                <div class="card-body">
+                  <h5 class="card-title">Intermediário</h5>
+                  <p class="card-text">Avance por rotas mais desafiadoras, dominando boas práticas e frameworks.
+                    Aprimore suas técnicas e torne seus projetos mais organizados, criativos e consistentes.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col col-md-4">
+            <a href="avancado.html" class="text-decoration-none text-dark">
+              <div class="card h-100 text-center topic-card">
+                <img src="../images/3-avancado.jpg" class="card-img-top" alt="Descrição da Imagem 3">
+                <div class="card-body">
+                  <h5 class="card-title">Avançado</h5>
+                  <p class="card-text">Alcance o tesouro do conhecimento explorando grandes desafios da jornada. Domine
+                    arquitetura, performance, testes e deploy, e consolide sua experiência como desenvolvedor completo.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="text-center p-4">
+        <p>Basta escolher seu nível atual e seguir o mapa de conteúdos sugerido!</p>
+      </div>
+    </section>
+
+    <!-- Fim da section de instruções-->
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Início da section do público alvo do site-->
+    <section class="py-5">
+      <div class="text-center">
+        <h2>Para quem é o MapaDev?</h2> <!--Título-->
+        <p>Criamos o MapaDev pensando em diferentes perfis de estudantes e profissionais.</p> <!--Parágrafo-->
+      </div>
+
+      <div class="container my-5">
+
+        <div class="row g-4"> <!-- g-4 cria gap entre os cards -->
+
+          <!-- Card 1 -->
+          <div class="col-md-6">
+            <div class="d-flex align-items-start  border rounded shadow-sm p-3 h-100">
+              <i class="bi bi-lightning-charge-fill fs-2 text-primary me-3"></i>
+              <div>
+                <h3 class="mb-2">Iniciantes Absolutos</h3> <!--mb-2 adiciona margem inferior reduzida -->
+                <p class="mb-0">Se você está começando do zero e se sente sobrecarregado com a quantidade de informação,
+                  o
+                  MapaDev oferece um "caminho das pedras" claro e estruturado.</p>
+                <!-- mb-0 remove margem inferior padrão para evitar espaçamento extra -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6">
+            <div class="d-flex align-items-start  border rounded shadow-sm p-3 h-100">
+              <i class="bi bi-mortarboard-fill fs-2 text-success me-3"></i>
+              <div>
+                <h3 class="mb-2">Estudantes de TI</h3>
+                <p class="mb-0">Assim como nós, se você está na graduação, pode usar este site como um complemento
+                  robusto aos
+                  seus estudos e um guia para saber o que estudar a seguir.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6">
+            <div class="d-flex align-items-start  border rounded shadow-sm p-3 h-100">
+              <i class="bi bi-briefcase-fill fs-2 text-danger me-3"></i>
+              <div>
+                <h3 class="mb-2">Profissionais em Transição de Carreira</h3>
+                <p class="mb-0">Se você já tem algum conhecimento ou está vindo de outra área, as trilhas Intermediária
+                  e
+                  Avançada ajudam a identificar lacunas e a entender o que o mercado espera de um desenvolvedor moderno.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6">
+            <div class="d-flex align-items-start  border rounded shadow-sm p-3 h-100">
+              <i class="bi bi-rocket-takeoff-fill fs-2 text-warning me-3"></i>
+              <div>
+                <h3 class="mb-2">Desenvolvedores buscando evoluir</h3>
+                <p class="mb-0">Já sabe o básico, mas não tem certeza de qual tecnologia aprender agora? Use nossas
+                  trilhas para
+                  descobrir o próximo passo lógico em sua evolução profissional.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </section>
+    <!--Fim da section do publico alvo-->
+  </main>
+  <!--Fim da parte principal do site-->
+
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+  <main-footer></main-footer> <!--Componente do Footer-->
+</body>
+<!--Fim do body-->
+
+</html>

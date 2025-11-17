@@ -1,7 +1,7 @@
 const caminhoAtual = window.location.pathname.split("/").pop(); //Seleciona o caminho atual.
 
 class Header extends HTMLElement {
-    connectedCallback(){
+    connectedCallback(){        
         const iniciante = [
             "iniciante.html",
             "iniciante-logica-programacao.html",
@@ -28,6 +28,19 @@ class Header extends HTMLElement {
             "avancado-cloud-computing.html"
         ];
 
+        let inicianteLink = ""
+        let intermediarioLink = ""
+        let avancadoLink = ""
+        if(caminhoAtual === "index.html"){
+            inicianteLink = '"href="/src/iniciante.html"'
+            intermediarioLink = '"href="/src/intermediario.html"'
+            avancadoLink = '"href="/src/avancado.html"'
+        }else {
+            inicianteLink = '"href="iniciante.html"'
+            intermediarioLink = '"href="intermediario.html"'
+            avancadoLink = '"href="avancado.html"'
+        }
+
          //data-bs-theme="light" estava travando o tema no "light"
          //troquei a class="logo-light" por class="logo-img" para trocar a logo caso tema 'dark'
         this.innerHTML = `
@@ -40,7 +53,7 @@ class Header extends HTMLElement {
                     <span class="navbar-toggler-icon"></span>
                     </button>
                                   
-                    <a class="navbar-brand mx-auto me-lg-auto ms-lg-0" href="index.html">
+                    <a class="navbar-brand mx-auto me-lg-auto ms-lg-0" href="/index.html">
                         <img src="/images/mapadev-logo-light.svg" alt="MapaDev" height="40" class="logo-img"> 
                     </a>
 
@@ -51,18 +64,15 @@ class Header extends HTMLElement {
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline justify-content-center">
                             <li class="nav-item">
-                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""}" href="iniciante.html">Iniciante</a>
+                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""}${inicianteLink}>Iniciante</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""}" href="intermediario.html">Intermediário</a>
+                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""}${intermediarioLink}>Intermediário</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""}" href="avancado.html">Avançado</a>
+                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""}${avancadoLink}>Avançado</a>
                             </li>
-                        </ul>
-
-                        
-                        
+                        </ul>                       
                         
                         <button id="theme-toggle" type="button" class="btn btn-info rounded-circle ms-lg-2 mt-2 mt-lg-0">
                             <i class="theme-icon bi bi-moon-fill "></i>
