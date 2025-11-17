@@ -8,7 +8,7 @@ class InicianteNavEsquerda extends HTMLElement {
                     <a class="nav-link ${caminhoAtual === "iniciante.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante.html">Iniciante</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${caminhoAtual === "iniciante-logica-programacao.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante-logica-programacao.html">Logicade Programaçao</a>
+                    <a class="nav-link ${caminhoAtual === "iniciante-logica-programacao.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante-logica-programacao.html">Lógica de Programaçao</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link ${caminhoAtual === "iniciante-html.html" ? "active text-dark fw-medium bg-info rounded-3" : "text-muted"}" href="iniciante-html.html">HTML</a>
