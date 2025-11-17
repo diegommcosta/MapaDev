@@ -34,10 +34,6 @@ class Header extends HTMLElement {
 
         const base = dentroDeSrc ? "../" : "";
 
-        const inicianteLink = `"${base}src/iniciante.html"`;
-        const intermediarioLink = `"${base}src/intermediario.html"`;
-        const avancadoLink = `"${base}src/avancado.html"`;
-
          //data-bs-theme="light" estava travando o tema no "light"
          //troquei a class="logo-light" por class="logo-img" para trocar a logo caso tema 'dark'
         this.innerHTML = `
@@ -61,13 +57,13 @@ class Header extends HTMLElement {
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline justify-content-center">
                             <li class="nav-item">
-                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""} href=${inicianteLink}>Iniciante</a>
+                            <a class="nav-link ${iniciante.includes(caminhoAtual) ? "active": ""}" href="${base}src/iniciante.html">Iniciante</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""} href=${intermediarioLink}>Intermediário</a>
+                            <a class="nav-link ${intermediario.includes(caminhoAtual) ? "active": ""}" href="${base}src/intermediario.html">Intermediário</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""} href=${avancadoLink}>Avançado</a>
+                            <a class="nav-link ${avancado.includes(caminhoAtual) ? "active": ""}" href="${base}src/avancado.html">Avançado</a>
                             </li>
                         </ul>                       
                         
